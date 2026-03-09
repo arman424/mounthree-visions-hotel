@@ -5,11 +5,8 @@ const EventPopup = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const dismissed = localStorage.getItem("event-popup-dismissed");
-    if (!dismissed) {
-      const timer = setTimeout(() => setVisible(true), 2000);
-      return () => clearTimeout(timer);
-    }
+    const timer = setTimeout(() => setVisible(true), 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   const close = () => {
