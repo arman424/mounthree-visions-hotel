@@ -20,7 +20,7 @@ const benefits = [
 const Index = () => {
   return (
     <Layout>
-      {/* Hero */}
+      <EventPopup />
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
