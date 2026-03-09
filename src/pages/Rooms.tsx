@@ -3,8 +3,6 @@ import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import { useI18n } from "@/i18n/context";
 
-type FeatureKey = keyof typeof import("@/i18n/types").prototype;
-
 const roomsData = [
   {
     nameKey: "standardMountain" as const,
