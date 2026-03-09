@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { I18nProvider } from "@/i18n/context";
 import Index from "./pages/Index";
 import Rooms from "./pages/Rooms";
 import Hotel from "./pages/Hotel";
@@ -26,20 +27,22 @@ const ScrollToTop = () => {
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/rooms" element={<Rooms />} />
-          <Route path="/hotel" element={<Hotel />} />
-          <Route path="/dining" element={<Dining />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/book" element={<BookNow />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <I18nProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/rooms" element={<Rooms />} />
+            <Route path="/hotel" element={<Hotel />} />
+            <Route path="/dining" element={<Dining />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/book" element={<BookNow />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </I18nProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
