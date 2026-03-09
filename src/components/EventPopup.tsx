@@ -11,7 +11,6 @@ const EventPopup = () => {
 
   const close = () => {
     setVisible(false);
-    localStorage.setItem("event-popup-dismissed", "true");
   };
 
   if (!visible) return null;
