@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import EventPopup from "@/components/EventPopup";
 import { Wifi, Dumbbell, UtensilsCrossed, Wine, ArrowRight } from "lucide-react";
 
 const rooms = [
