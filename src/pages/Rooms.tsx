@@ -6,43 +6,43 @@ import { useI18n } from "@/i18n/context";
 const roomsData = [
   {
     nameKey: "standardMountain" as const,
-    images: ["/images/room2.jpg", "/images/room7.jpg"],
+    images: ["images/room2.jpg", "images/room7.jpg"],
     guests: 2, bathrooms: 1, area: "26-31 m\u00B2", qty: 15, price: "58,000\u058F",
     featureKeys: ["kingBed", "showerBathroom", "modernAmenities", "balconyViews"] as const,
   },
   {
     nameKey: "standardCourtyard" as const,
-    images: ["/images/room1.jpeg", "/images/room11.jpeg"],
+    images: ["images/room1.jpeg", "images/room11.jpeg"],
     guests: 2, bathrooms: 1, area: "26-31 m\u00B2", qty: 6, price: "56,000\u058F",
     featureKeys: ["twinBeds", "showerBathroom", "modernAmenitiesPleasant", "courtyardBalcony"] as const,
   },
   {
     nameKey: "standardNoBalcony" as const,
-    images: ["/images/room2.jpg", "/images/room7.jpg"],
+    images: ["images/room2.jpg", "images/room7.jpg"],
     guests: 2, bathrooms: 1, area: "26-31 m\u00B2", qty: 15, price: "54,000\u058F",
     featureKeys: ["kingBed", "showerBathroom", "modernAmenitiesPleasant"] as const,
   },
   {
     nameKey: "deluxe" as const,
-    images: ["/images/room3.jpg", "/images/room10.jpg"],
+    images: ["images/room3.jpg", "images/room10.jpg"],
     guests: 2, bathrooms: 1, area: "36 m\u00B2", qty: 2, price: "On request",
     featureKeys: ["kingBedComfort", "showerBathroom", "spaciousElegant", "modernAmenitiesPleasant", "balconyViewsBeautiful"] as const,
   },
   {
     nameKey: "familySuite" as const,
-    images: ["/images/room4.jpg", "/images/room9.jpg"],
+    images: ["images/room4.jpg", "images/room9.jpg"],
     guests: 2, bathrooms: 1, area: "43-63 m\u00B2", qty: 3, price: "On request",
     featureKeys: ["kingBedComfort", "privateEntrance", "elegantSofa", "balconyViewsBeautiful"] as const,
   },
   {
     nameKey: "signatureSuite" as const,
-    images: ["/images/room5.jpg", "/images/room8.jpg"],
+    images: ["images/room5.jpg", "images/room8.jpg"],
     guests: 2, bathrooms: 1, area: "43-63 m\u00B2", qty: 5, price: "125,000\u058F",
     featureKeys: ["superKingBed", "tubView", "elegantFurnitureSofa", "sharingBalconies"] as const,
   },
   {
     nameKey: "chalet" as const,
-    images: ["/images/room5.jpg", "/images/room8.jpg"],
+    images: ["images/room5.jpg", "images/room8.jpg"],
     guests: 2, bathrooms: 1, area: "45 m\u00B2", qty: 2, price: "125,000\u058F",
     featureKeys: ["superKingBed", "showerTubView", "elegantFurniture", "terraceViews"] as const,
   },
@@ -53,7 +53,7 @@ const Rooms = () => {
 
   return (
     <Layout>
-      <PageHero image="/images/room3.jpg" title={t.roomsPage.title} subtitle={t.roomsPage.subtitle} />
+      <PageHero image="images/room3.jpg" title={t.roomsPage.title} subtitle={t.roomsPage.subtitle} />
 
       <section className="hotel-section">
         <div className="max-w-5xl mx-auto space-y-6 text-center mb-16">
