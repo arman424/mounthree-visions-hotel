@@ -22,7 +22,7 @@
     --secondary-foreground: 38 25% 88%;
 
     --muted: 30 6% 18%;
-    --muted-foreground: 38 10% 55%;
+    --muted-foreground: 38 30% 90%;
 
     --accent: 38 45% 55%;
     --accent-foreground: 30 10% 6%;
@@ -76,7 +76,7 @@
   }
 
   .hotel-heading {
-    @apply text-4xl md:text-5xl lg:text-6xl font-light tracking-wide;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide;
     font-family: 'Cormorant Garamond', serif;
   }
 

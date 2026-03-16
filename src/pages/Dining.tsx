@@ -19,7 +19,7 @@ const Dining = () => {
 
   return (
     <Layout>
-      <PageHero image="/images/restaurant-hero.jpg" title={t.diningPage.title} subtitle={t.diningPage.subtitle} />
+      <PageHero image="/images/restaurant.webp" title={t.diningPage.title} subtitle={t.diningPage.subtitle} />
 
       {/* Intro */}
       <section className="hotel-section">

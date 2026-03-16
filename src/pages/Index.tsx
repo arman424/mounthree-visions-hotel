@@ -23,14 +23,17 @@ const Index = () => {
 
   return (
     <Layout>
-      <EventPopup />
-      {/* Hero */}
+      {/*<EventPopup />*/}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/hero.jpg)" }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat">
+          <video className="w-full h-full object-cover" playsInline autoPlay loop muted>
+            <source type="video/mp4" src="/images/mounthree.mp4" />
+          </video>
+        </div>
         <div className="hero-overlay" />
         <div className="relative z-10 text-center px-6 animate-fade-in">
           <p className="hotel-subheading mb-6">{t.hero.welcomeTo}</p>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light tracking-wide text-foreground">Mounthree</h1>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold tracking-wide text-foreground">Mounthree</h1>
           <p className="font-serif text-xl md:text-2xl text-foreground/70 mt-4 italic font-light">{t.hero.subtitle}</p>
           <div className="gold-divider mt-8" />
           <div className="flex flex-col sm:flex-row gap-4 mt-10 justify-center">
@@ -57,7 +60,7 @@ const Index = () => {
             </Link>
           </div>
           <div className="relative">
-            <img src="/images/hero.jpg" alt="Hotel Mounthree aerial view" className="w-full aspect-[4/5] object-cover" loading="lazy" />
+            <img src="/images/main.webp" alt="Hotel Mounthree aerial view" className="w-full aspect-[4/5] object-cover" loading="lazy" />
           </div>
         </div>
       </section>
@@ -130,7 +133,7 @@ const Index = () => {
       <section className="hotel-section bg-card">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div className="relative order-2 md:order-1">
-            <img src="/images/restaurant-hero.jpg" alt="Mounthree Restaurant" className="w-full aspect-[4/5] object-cover" loading="lazy" />
+            <img src="/images/restaurant.webp" alt="Mounthree Restaurant" className="w-full aspect-[4/5] object-cover" loading="lazy" />
           </div>
           <div className="space-y-6 order-1 md:order-2">
             <p className="hotel-subheading">{t.restaurantPreview.label}</p>
