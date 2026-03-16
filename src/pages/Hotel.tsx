@@ -9,7 +9,7 @@ const Hotel = () => {
 
   return (
     <Layout>
-      <PageHero image="/images/hero.jpg" title={t.hotelPage.title} subtitle={t.hotelPage.subtitle} />
+      <PageHero image="/images/main.webp" title={t.hotelPage.title} subtitle={t.hotelPage.subtitle} />
 
       {/* Overview */}
       <section className="hotel-section">
@@ -25,7 +25,7 @@ const Hotel = () => {
       {/* Bar & Restaurant */}
       <section className="hotel-section bg-card">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img src="/images/restaurant-hero.jpg" alt="Restaurant" className="w-full aspect-[4/3] object-cover" loading="lazy" />
+          <img src="/images/restaurant.webp" alt="Restaurant" className="w-full aspect-[4/3] object-cover" loading="lazy" />
           <div className="space-y-6">
             <p className="hotel-subheading">{t.hotelPage.diningLabel}</p>
             <h2 className="hotel-heading text-foreground">{t.hotelPage.diningTitle}</h2>

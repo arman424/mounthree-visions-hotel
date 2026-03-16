@@ -33,13 +33,14 @@ const App = () => (
         <BrowserRouter>
           <ScrollToTop />
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/rooms" element={<Rooms />} />
-            <Route path="/hotel" element={<Hotel />} />
-            <Route path="/dining" element={<Dining />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/book" element={<BookNow />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<Index />} />
+            {/*<Route path="/" element={<Index />} />*/}
+            {/*<Route path="/rooms" element={<Rooms />} />*/}
+            {/*<Route path="/hotel" element={<Hotel />} />*/}
+            {/*<Route path="/dining" element={<Dining />} />*/}
+            {/*<Route path="/contact" element={<Contact />} />*/}
+            {/*<Route path="/book" element={<BookNow />} />*/}
+            {/*<Route path="*" element={<NotFound />} />*/}
           </Routes>
         </BrowserRouter>
       </I18nProvider>
