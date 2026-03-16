@@ -15,7 +15,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <PageHero image="/images/location.jpg" title={t.contactPage.title} subtitle={t.contactPage.subtitle} />
+      <PageHero image="images/location.jpg" title={t.contactPage.title} subtitle={t.contactPage.subtitle} />
 
       <section className="hotel-section">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20">

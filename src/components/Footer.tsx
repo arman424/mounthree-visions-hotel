@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <img src="/images/logo.jpg" alt="Mounthree" className="h-12" />
+            <img src="images/logo.jpg" alt="Mounthree" className="h-12" />
             <p className="hotel-body text-sm">{t.footer.brandText}</p>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/346457221890276" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">

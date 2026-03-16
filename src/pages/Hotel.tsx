@@ -9,7 +9,7 @@ const Hotel = () => {
 
   return (
     <Layout>
-      <PageHero image="/images/main.webp" title={t.hotelPage.title} subtitle={t.hotelPage.subtitle} />
+      <PageHero image="images/main.webp" title={t.hotelPage.title} subtitle={t.hotelPage.subtitle} />
 
       {/* Overview */}
       <section className="hotel-section">
@@ -25,7 +25,7 @@ const Hotel = () => {
       {/* Bar & Restaurant */}
       <section className="hotel-section bg-card">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img src="/images/restaurant.webp" alt="Restaurant" className="w-full aspect-[4/3] object-cover" loading="lazy" />
+          <img src="images/restaurant.webp" alt="Restaurant" className="w-full aspect-[4/3] object-cover" loading="lazy" />
           <div className="space-y-6">
             <p className="hotel-subheading">{t.hotelPage.diningLabel}</p>
             <h2 className="hotel-heading text-foreground">{t.hotelPage.diningTitle}</h2>
@@ -47,13 +47,13 @@ const Hotel = () => {
             <div className="gold-divider !mx-0" />
             <p className="hotel-body">{t.hotelPage.rooftopText}</p>
           </div>
-          <img src="/images/dining2.jpg" alt="Rooftop Bar" className="w-full aspect-[4/3] object-cover md:order-2" loading="lazy" />
+          <img src="images/dining2.jpg" alt="Rooftop Bar" className="w-full aspect-[4/3] object-cover md:order-2" loading="lazy" />
         </div>
       </section>
 
       {/* Pool & Spa */}
       <section className="relative py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/spa.jpg)" }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(images/spa.jpg)" }} />
         <div className="hero-overlay" />
         <div className="relative z-10 max-w-3xl mx-auto text-center px-6 space-y-6">
           <p className="hotel-subheading">{t.hotelPage.wellnessLabel}</p>

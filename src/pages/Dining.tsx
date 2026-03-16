@@ -19,7 +19,7 @@ const Dining = () => {
 
   return (
     <Layout>
-      <PageHero image="/images/restaurant.webp" title={t.diningPage.title} subtitle={t.diningPage.subtitle} />
+      <PageHero image="images/restaurant.webp" title={t.diningPage.title} subtitle={t.diningPage.subtitle} />
 
       {/* Intro */}
       <section className="hotel-section">
@@ -31,7 +31,7 @@ const Dining = () => {
             <p className="hotel-body">{t.diningPage.restaurantText1}</p>
             <p className="hotel-body">{t.diningPage.restaurantText2}</p>
           </div>
-          <img src="/images/dining1.jpg" alt="Fine dining" className="w-full aspect-[4/5] object-cover" loading="lazy" />
+          <img src="images/dining1.jpg" alt="Fine dining" className="w-full aspect-[4/5] object-cover" loading="lazy" />
         </div>
       </section>
 
@@ -62,7 +62,7 @@ const Dining = () => {
       {/* Rooftop */}
       <section className="hotel-section">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img src="/images/dining2.jpg" alt="Restaurant ambience" className="w-full aspect-[4/3] object-cover" loading="lazy" />
+          <img src="images/dining2.jpg" alt="Restaurant ambience" className="w-full aspect-[4/3] object-cover" loading="lazy" />
           <div className="space-y-6">
             <p className="hotel-subheading">{t.diningPage.rooftopLabel}</p>
             <h2 className="hotel-heading text-foreground">{t.diningPage.rooftopTitle}</h2>
