@@ -2,13 +2,22 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import EventPopup from "@/components/EventPopup";
 import { useI18n } from "@/i18n/context";
-import { Wifi, Dumbbell, UtensilsCrossed, Wine, ArrowRight } from "lucide-react";
+import { Wifi, Dumbbell, UtensilsCrossed, Wine, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 
 const rooms = [
-  { nameKey: "standardMountain" as const, image: "images/room2.jpg", guests: 2, area: "26-31 m\u00B2", price: "58,000\u058F" },
-  { nameKey: "deluxe" as const, image: "images/room3.jpg", guests: 2, area: "36 m\u00B2", price: "On request" },
-  { nameKey: "familySuite" as const, image: "images/room4.jpg", guests: 2, area: "43-63 m\u00B2", price: "On request" },
-  { nameKey: "signatureSuite" as const, image: "images/room5.jpg", guests: 2, area: "43-63 m\u00B2", price: "125,000\u058F" },
+  { nameKey: "standardMountain" as const, images: ["images/room2.jpg", "images/room7.jpg", "images/room11.jpeg"], guests: 2, area: "26-31 m²", price: "58,000֏" },
+  { nameKey: "standardCourtyard" as const, images: ["images/room1.jpeg", "images/room11.jpeg", "images/room7.jpg"], guests: 2, area: "26-31 m²", price: "56,000֏" },
+  { nameKey: "familySuite" as const, images: ["images/room4.jpg", "images/room9.jpg", "images/room10.jpg"], guests: 2, area: "43-63 m²", price: "On request" },
+  { nameKey: "deluxe" as const, images: ["images/room3.jpg", "images/room10.jpg", "images/room9.jpg"], guests: 2, area: "36 m²", price: "On request" },
+  { nameKey: "signatureSuite" as const, images: ["images/room5.jpg", "images/room8.jpg", "images/room3.jpg"], guests: 2, area: "43-63 m²", price: "125,000֏" },
+  { nameKey: "chalet" as const, images: ["images/room5.jpg", "images/room8.jpg", "images/room4.jpg"], guests: 2, area: "45 m²", price: "125,000֏" },
 ];
 
 const Index = () => {
@@ -107,24 +116,31 @@ const Index = () => {
             <h2 className="hotel-heading text-foreground">{t.roomsPreview.title}</h2>
             <div className="gold-divider" />
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {rooms.map((room) => (
-              <Link key={room.nameKey} to="/rooms" className="group relative overflow-hidden aspect-[3/2]">
-                <img src={room.image} alt={t.roomsPage.roomNames[room.nameKey]} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 space-y-1">
-                  <h3 className="font-serif text-2xl text-foreground">{t.roomsPage.roomNames[room.nameKey]}</h3>
+              <div key={room.nameKey} className="group relative overflow-hidden">
+                <Carousel className="w-full" opts={{ loop: true }}>
+                  <CarouselContent>
+                    {room.images.map((img, i) => (
+                      <CarouselItem key={i}>
+                        <img src={img} alt={`${t.roomsPage.roomNames[room.nameKey]} ${i + 1}`} className="w-full aspect-[3/2] object-cover" loading="lazy" />
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="left-2 h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity bg-background/60 border-0 hover:bg-background/80" />
+                  <CarouselNext className="right-2 h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity bg-background/60 border-0 hover:bg-background/80" />
+                </Carousel>
+                <div className="p-4 space-y-2">
+                  <h3 className="font-serif text-xl text-foreground">{t.roomsPage.roomNames[room.nameKey]}</h3>
                   <p className="text-sm text-muted-foreground">
                     {room.guests} {t.roomsPreview.guests} · {room.area} · {t.roomsPreview.from} {room.price}
                   </p>
+                  <Link to="/rooms" className="inline-flex items-center gap-1 text-xs uppercase tracking-[0.15em] font-semibold text-primary hover:text-gold-light transition-colors">
+                    {t.roomsPreview.viewAll} <ArrowRight size={12} />
+                  </Link>
                 </div>
-              </Link>
+              </div>
             ))}
-          </div>
-          <div className="text-center">
-            <Link to="/rooms" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-primary hover:text-gold-light transition-colors">
-              {t.roomsPreview.viewAll} <ArrowRight size={14} />
-            </Link>
           </div>
         </div>
       </section>
