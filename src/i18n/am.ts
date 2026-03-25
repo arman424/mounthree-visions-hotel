@@ -2,12 +2,12 @@ import { Translations } from "./types";
 
 export const am: Translations = {
   nav: {
-    home: "Գլխdelays",
+    home: "Գլխավոր",
     rooms: "Սենյակներ",
-    facilities: "Հարdelays",
+    facilities: "Հարմարdelays",
     dining: " Delays",
-    contact: "Կdelays",
-    bookNow: " Delays",
+    contact: "Delays",
+    bookNow: "Delays",
   },
   hero: {
     welcomeTo: "Բարdelays",
