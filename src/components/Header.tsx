@@ -1,19 +1,27 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe, ChevronDown } from "lucide-react";
 import { useI18n } from "@/i18n/context";
 import { Lang } from "@/i18n/types";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
-const langs: { code: Lang; label: string }[] = [
-  { code: "en", label: "EN" },
-  { code: "ru", label: "RU" },
-  { code: "am", label: "AM" },
+const langs: { code: Lang; label: string; full: string }[] = [
+  { code: "en", label: "EN", full: "English" },
+  { code: "ru", label: "RU", full: "Русский" },
+  { code: "am", label: "AM", full: "Հայերեն" },
 ];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const { lang, setLang, t } = useI18n();
+
+  const currentLang = langs.find((l) => l.code === lang)!;
 
   const navItems = [
     { label: t.nav.home, path: "/" },
@@ -46,22 +54,27 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          {/* Language Switcher */}
-          <div className="flex items-center gap-1 border border-border/50 px-1 py-0.5">
-            {langs.map((l) => (
-              <button
-                key={l.code}
-                onClick={() => setLang(l.code)}
-                className={`text-[10px] uppercase tracking-[0.15em] font-medium px-2 py-1 transition-colors ${
-                  lang === l.code
-                    ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {l.label}
-              </button>
-            ))}
-          </div>
+          {/* Language Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-foreground/70 hover:text-foreground transition-colors px-2 py-1.5 border border-border/50 outline-none">
+              <Globe size={14} />
+              {currentLang.label}
+              <ChevronDown size={12} />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="min-w-[140px]">
+              {langs.map((l) => (
+                <DropdownMenuItem
+                  key={l.code}
+                  onClick={() => setLang(l.code)}
+                  className={`text-xs uppercase tracking-[0.1em] cursor-pointer ${
+                    lang === l.code ? "text-primary font-semibold" : ""
+                  }`}
+                >
+                  {l.label} — {l.full}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
 
           <Link
             to="/book"
