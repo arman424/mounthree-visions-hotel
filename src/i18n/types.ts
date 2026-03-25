@@ -4,7 +4,7 @@ export interface Translations {
   nav: {
     home: string;
     rooms: string;
-    hotel: string;
+    facilities: string;
     dining: string;
     contact: string;
     bookNow: string;
@@ -96,16 +96,16 @@ export interface Translations {
       terraceViews: string;
     };
   };
-  hotelPage: {
+  facilitiesPage: {
     subtitle: string;
     title: string;
-    overview1: string;
-    overview2: string;
-    viewRooms: string;
+    roomServiceLabel: string;
+    roomServiceTitle: string;
+    roomServiceText: string;
     diningLabel: string;
     diningTitle: string;
     diningText: string;
-    exploreDining: string;
+    viewMenu: string;
     rooftopLabel: string;
     rooftopTitle: string;
     rooftopText: string;
@@ -116,6 +116,16 @@ export interface Translations {
     serviceLabel: string;
     serviceTitle: string;
     serviceText: string;
+    gymLabel: string;
+    gymTitle: string;
+    gymText: string;
+    playRoomLabel: string;
+    playRoomTitle: string;
+    playRoomText: string;
+    conferenceLabel: string;
+    conferenceTitle: string;
+    conferenceText: string;
+    conferenceIncludes: string[];
     bookNow: string;
   };
   diningPage: {
