@@ -24,7 +24,7 @@ export const en: Translations = {
   location: {
     label: "Location",
     title: "Heart of Armenia",
-    text: "Nestled on the banks of the picturesque Pambak River, amidst the breathtaking natural beauty of Lori. Located adjacent to the charming Pambak Village, surrounded by majestic mountains and lush forests, offering an unparalleled sense of tranquility.",
+    text: "The Mountain Hotel Complex is located in one of the most picturesque places in Armenia, near the village of Pambak, where relaxation and comfort combine.",
   },
   amenities: {
     label: "Amenities",
