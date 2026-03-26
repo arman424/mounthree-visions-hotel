@@ -12,7 +12,7 @@ const Hotel = () => {
       <PageHero image="images/main.webp" title={t.facilitiesPage.title} subtitle={t.facilitiesPage.subtitle} />
 
       {/* Room Service */}
-      <section className="hotel-section">
+      <section className="hotel-section bg-card">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <img src="images/room2.jpg" alt="Room Service" className="w-full aspect-[4/3] object-cover" loading="lazy" />
           <div className="space-y-6">
@@ -27,8 +27,8 @@ const Hotel = () => {
       {/* Swimming Pool & Spa */}
       <section className="hotel-section">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img src="images/spa.jpg" alt="Swimming Pool & Spa" className="w-full aspect-[4/3] object-cover" loading="lazy" />
-          <div className="space-y-6">
+          <img src="images/spa.jpg" alt="Swimming Pool & Spa" className="w-full aspect-[4/3] object-cover md:order-1" loading="lazy" />
+          <div className="space-y-6 md:order-2">
             <p className="hotel-subheading">{t.facilitiesPage.wellnessLabel}</p>
             <h2 className="hotel-heading text-foreground">{t.facilitiesPage.wellnessTitle}</h2>
             <div className="gold-divider !mx-0" />
