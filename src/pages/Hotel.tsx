@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
-import { Dumbbell, Baby } from "lucide-react";
 import { useI18n } from "@/i18n/context";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 
 const Hotel = () => {
   const { t } = useI18n();
@@ -59,19 +65,35 @@ const Hotel = () => {
             <div className="gold-divider !mx-0" />
             <p className="hotel-body">{t.facilitiesPage.gymText}</p>
           </div>
-          <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center">
-            <Dumbbell size={64} className="text-primary/40" />
-          </div>
+          <Carousel className="w-full group" opts={{ loop: true }}>
+            <CarouselContent>
+              {["images/gym1.jpg", "images/gym2.jpg"].map((img, i) => (
+                <CarouselItem key={i}>
+                  <img src={img} alt={`Gym & Game Zone ${i + 1}`} className="w-full aspect-[4/3] object-cover" loading="lazy" />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2 h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity bg-background/60 border-0 hover:bg-background/80" />
+            <CarouselNext className="right-2 h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity bg-background/60 border-0 hover:bg-background/80" />
+          </Carousel>
         </div>
       </section>
 
       {/* Play Room */}
       <section className="hotel-section bg-card">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <div className="w-full aspect-[4/3] bg-muted flex items-center justify-center md:order-1">
-            <Baby size={64} className="text-primary/40" />
-          </div>
-          <div className="space-y-6 md:order-2">
+          <Carousel className="w-full group" opts={{ loop: true }}>
+            <CarouselContent>
+              {["images/playroom1.jpg", "images/playroom2.jpg"].map((img, i) => (
+                <CarouselItem key={i}>
+                  <img src={img} alt={`Play Room ${i + 1}`} className="w-full aspect-[4/3] object-cover" loading="lazy" />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2 h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity bg-background/60 border-0 hover:bg-background/80" />
+            <CarouselNext className="right-2 h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity bg-background/60 border-0 hover:bg-background/80" />
+          </Carousel>
+          <div className="space-y-6">
             <p className="hotel-subheading">{t.facilitiesPage.playRoomLabel}</p>
             <h2 className="hotel-heading text-foreground">{t.facilitiesPage.playRoomTitle}</h2>
             <div className="gold-divider !mx-0" />
