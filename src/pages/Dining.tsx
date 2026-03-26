@@ -68,6 +68,9 @@ const Dining = () => {
             <h2 className="hotel-heading text-foreground">{t.diningPage.rooftopTitle}</h2>
             <div className="gold-divider !mx-0" />
             <p className="hotel-body">{t.diningPage.rooftopText}</p>
+            <a href="https://oddmenu.com/p/van" target="_blank" rel="noopener noreferrer" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+              {t.diningPage.viewFullMenu}
+            </a>
           </div>
         </div>
       </section>
