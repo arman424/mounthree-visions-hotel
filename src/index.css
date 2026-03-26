@@ -6,23 +6,23 @@
 
 @layer base {
   :root {
-    --background: 30 10% 6%;
-    --foreground: 38 25% 88%;
+    --background: 30 8% 12%;
+    --foreground: 38 20% 90%;
 
-    --card: 30 8% 10%;
-    --card-foreground: 38 25% 88%;
+    --card: 30 6% 16%;
+    --card-foreground: 38 20% 90%;
 
-    --popover: 30 8% 10%;
-    --popover-foreground: 38 25% 88%;
+    --popover: 30 6% 16%;
+    --popover-foreground: 38 20% 90%;
 
     --primary: 38 45% 55%;
     --primary-foreground: 30 10% 6%;
 
-    --secondary: 30 8% 14%;
-    --secondary-foreground: 38 25% 88%;
+    --secondary: 30 6% 20%;
+    --secondary-foreground: 38 20% 90%;
 
-    --muted: 30 6% 18%;
-    --muted-foreground: 38 30% 90%;
+    --muted: 30 5% 22%;
+    --muted-foreground: 38 15% 70%;
 
     --accent: 38 45% 55%;
     --accent-foreground: 30 10% 6%;
@@ -30,8 +30,8 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 8% 18%;
-    --input: 30 8% 18%;
+    --border: 30 6% 22%;
+    --input: 30 6% 22%;
     --ring: 38 45% 55%;
 
     --radius: 0.25rem;
@@ -40,17 +40,17 @@
     --gold-light: 38 35% 72%;
     --gold-dark: 38 50% 38%;
     --cream: 38 25% 88%;
-    --dark: 30 10% 6%;
-    --dark-lighter: 30 8% 10%;
-    --dark-card: 30 8% 14%;
+    --dark: 30 8% 12%;
+    --dark-lighter: 30 6% 16%;
+    --dark-card: 30 6% 20%;
 
-    --sidebar-background: 30 8% 10%;
-    --sidebar-foreground: 38 25% 88%;
+    --sidebar-background: 30 6% 16%;
+    --sidebar-foreground: 38 20% 90%;
     --sidebar-primary: 38 45% 55%;
     --sidebar-primary-foreground: 30 10% 6%;
-    --sidebar-accent: 30 8% 14%;
-    --sidebar-accent-foreground: 38 25% 88%;
-    --sidebar-border: 30 8% 18%;
+    --sidebar-accent: 30 6% 20%;
+    --sidebar-accent-foreground: 38 20% 90%;
+    --sidebar-border: 30 6% 22%;
     --sidebar-ring: 38 45% 55%;
   }
 }
@@ -86,7 +86,7 @@
   }
 
   .hotel-body {
-    @apply text-base md:text-lg leading-relaxed text-muted-foreground font-light;
+    @apply text-base md:text-lg leading-relaxed text-foreground/70 font-light;
   }
 
   .gold-divider {
@@ -94,7 +94,7 @@
   }
 
   .hero-overlay {
-    @apply absolute inset-0 bg-gradient-to-b from-background/70 via-background/30 to-background/80;
+    @apply absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background/90;
   }
 
   .page-hero {
