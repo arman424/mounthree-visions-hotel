@@ -33,9 +33,9 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
-      <div className="flex items-center justify-between px-6 md:px-12 lg:px-20 py-4">
-        <Link to="/" className="flex items-center gap-3">
-          <img src="images/logo.jpg" alt="Mounthree" className="h-10 md:h-12" />
+      <div className="flex items-center justify-between px-6 md:px-12 lg:px-20 py-4 min-h-[72px]">
+        <Link to="/" className="flex items-center gap-3 shrink-0">
+          <img src="images/logo.jpg" alt="Mounthree" className="w-24 sm:w-28 md:w-32 h-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
@@ -61,16 +61,16 @@ const Header = () => {
               {currentLang.label}
               <ChevronDown size={12} />
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="min-w-[140px]">
+            <DropdownMenuContent align="end" className="min-w-0 w-max">
               {langs.map((l) => (
                 <DropdownMenuItem
                   key={l.code}
                   onClick={() => setLang(l.code)}
-                  className={`text-xs uppercase tracking-[0.1em] cursor-pointer ${
+                  className={`text-xs cursor-pointer whitespace-nowrap ${
                     lang === l.code ? "text-primary font-semibold" : ""
                   }`}
                 >
-                  {l.label} — {l.full}
+                  {l.full}
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
