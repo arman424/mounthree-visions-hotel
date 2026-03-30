@@ -23,10 +23,10 @@ const Dining = () => {
 
       {/* Intro */}
       <section className="hotel-section">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <div className="space-y-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 gap-8 md:gap-20 items-center">
+          <div className="space-y-6 min-w-0">
             <p className="hotel-subheading">{t.diningPage.restaurantLabel}</p>
-            <h2 className="hotel-heading text-foreground">{t.diningPage.restaurantTitle}</h2>
+            <h2 className="hotel-heading text-foreground break-words">{t.diningPage.restaurantTitle}</h2>
             <div className="gold-divider !mx-0" />
             <p className="hotel-body">{t.diningPage.restaurantText1}</p>
             <p className="hotel-body">{t.diningPage.restaurantText2}</p>
@@ -52,7 +52,7 @@ const Dining = () => {
             ))}
           </div>
           <div className="text-center">
-            <a href="http://oddmenu.com/p/van" target="_blank" rel="noopener noreferrer" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+            <a href="https://mabell.io/am/restaurant/01980835-1fe1-7114-a814-7e0ea99b9e16/service/0198312b-68b1-708b-93eb-43a3e0c0d3c5" target="_blank" rel="noopener noreferrer" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               {t.diningPage.viewFullMenu}
             </a>
           </div>
@@ -68,7 +68,7 @@ const Dining = () => {
             <h2 className="hotel-heading text-foreground">{t.diningPage.rooftopTitle}</h2>
             <div className="gold-divider !mx-0" />
             <p className="hotel-body">{t.diningPage.rooftopText}</p>
-            <a href="https://oddmenu.com/p/van" target="_blank" rel="noopener noreferrer" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+            <a href="https://mabell.io/am/restaurant/01980835-1fe1-7114-a814-7e0ea99b9e16/service/019d2ed6-d078-7296-991e-0eb5ffdd10f4" target="_blank" rel="noopener noreferrer" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               {t.diningPage.viewFullMenu}
             </a>
           </div>
