@@ -33,7 +33,7 @@ const Index = () => {
   return (
     <Layout>
       {/*<EventPopup />*/}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-[88vh] md:h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat">
           <video className="w-full h-full object-cover" playsInline autoPlay loop muted>
             <source type="video/mp4" src="images/mounthree.mp4" />
@@ -41,11 +41,11 @@ const Index = () => {
         </div>
         <div className="hero-overlay" />
         <div className="relative z-10 text-center px-6 animate-fade-in">
-          <p className="hotel-subheading mb-6">{t.hero.welcomeTo}</p>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold tracking-wide text-foreground">Mounthree</h1>
-          <p className="font-serif text-xl md:text-2xl text-foreground/70 mt-4 italic font-light">{t.hero.subtitle}</p>
-          <div className="gold-divider mt-8" />
-          <div className="flex flex-col sm:flex-row gap-4 mt-10 justify-center">
+          <p className="hotel-subheading mb-3 md:mb-6">{t.hero.welcomeTo}</p>
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-wide text-foreground">Mounthree</h1>
+          <p className="font-serif text-lg md:text-2xl text-foreground/70 mt-2 md:mt-4 italic font-light">{t.hero.subtitle}</p>
+          <div className="gold-divider mt-4 md:mt-8" />
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mt-6 md:mt-10 justify-center">
             <Link to="/rooms" className="text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               {t.hero.exploreRooms}
             </Link>
