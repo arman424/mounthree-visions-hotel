@@ -146,6 +146,17 @@ export const ru: Translations = {
     hoursText: "Понедельник — Воскресенье · 16:00 — 23:00",
     callUs: "Позвонить",
     emailUs: "Написать",
+    menuItems: {
+      vealSteak: "Стейк из телятины",
+      tolma: "Толма в виноградных листьях",
+      tzhvzhik: "Чжвжик с картофельным пюре",
+      steamedTrout: "Форель на пару",
+      grilledChicken: "Курица гриль",
+      grilledSeabass: "Сибас гриль",
+      rabbitCutlet: "Котлета из кролика",
+      lambShoulder: "Лопатка ягнёнка",
+      legOfLamb: "Нога ягнёнка",
+    },
   },
   contactPage: {
     subtitle: "Связаться",

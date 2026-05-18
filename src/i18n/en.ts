@@ -146,6 +146,17 @@ export const en: Translations = {
     hoursText: "Monday — Sunday · 4:00 PM — 11:00 PM",
     callUs: "Call",
     emailUs: "Email Us",
+    menuItems: {
+      vealSteak: "Veal Steak",
+      tolma: "Tolma with Grape Leaves",
+      tzhvzhik: "Tzhvzhik with Mashed Potatoes",
+      steamedTrout: "Steamed Trout",
+      grilledChicken: "Grilled Chicken",
+      grilledSeabass: "Grilled Seabass",
+      rabbitCutlet: "Rabbit Cutlet",
+      lambShoulder: "Lamb Shoulder",
+      legOfLamb: "Leg of Lamb",
+    },
   },
   contactPage: {
     subtitle: "Get in Touch",

@@ -157,6 +157,17 @@ export const am: Translations = {
     hoursText: "Երկուշաբթի — Կիրակի · 16:00 — 23:00",
     callUs: "Զանգահարել",
     emailUs: "Գրել մեզ",
+    menuItems: {
+      vealSteak: "Հորթի սթեյք",
+      tolma: "Տոլմա խաղողի տերևով",
+      tzhvzhik: "Տժվժիկ կարտոֆիլի փյուրեով",
+      steamedTrout: "Շոգեխաշած իշխան",
+      grilledChicken: "Հավի գրիլ",
+      grilledSeabass: "Սիբասի գրիլ",
+      rabbitCutlet: "Ճագարի կոտլետ",
+      lambShoulder: "Գառան թիակ",
+      legOfLamb: "Գառան ազդր",
+    },
   },
   contactPage: {
     subtitle: "Կապ մեզ հետ",
