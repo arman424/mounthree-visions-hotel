@@ -39,12 +39,12 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
-              className={`text-xs uppercase tracking-[0.2em] font-medium transition-colors hover:text-primary ${
+              className={`text-[11px] xl:text-xs uppercase tracking-[0.15em] xl:tracking-[0.2em] font-medium whitespace-nowrap transition-colors hover:text-primary ${
                 location.pathname === item.path ? "text-primary" : "text-foreground/70"
               }`}
             >
@@ -53,7 +53,7 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-3 xl:gap-4">
           {/* Language Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1.5 text-xs uppercase tracking-[0.15em] font-medium text-foreground/70 hover:text-foreground transition-colors px-2 py-1.5 border border-border/50 outline-none">
@@ -78,7 +78,7 @@ const Header = () => {
 
           <Link
             to="/book"
-            className="text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+            className="text-[11px] xl:text-xs uppercase tracking-[0.15em] xl:tracking-[0.2em] font-semibold whitespace-nowrap px-4 xl:px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
           >
             {t.nav.bookNow}
           </Link>
@@ -87,7 +87,7 @@ const Header = () => {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-foreground"
+          className="lg:hidden text-foreground"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -95,7 +95,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-background border-t border-border animate-fade-in">
+        <div className="lg:hidden bg-background border-t border-border animate-fade-in">
           <nav className="flex flex-col px-6 py-6 gap-4">
             {navItems.map((item) => (
               <Link
