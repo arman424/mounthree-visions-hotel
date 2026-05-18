@@ -157,7 +157,7 @@ export const en: Translations = {
       tzhvzhik: "Tzhvzhik with Mashed Potatoes",
       steamedTrout: "Steamed Trout",
       grilledChicken: "Grilled Chicken",
-      grilledSeabass: "Grilled Seabass",
+      grilledSeabass: "Pork ribs",
       rabbitCutlet: "Rabbit Cutlet",
       lambShoulder: "Lamb Shoulder",
       legOfLamb: "Leg of Lamb",
