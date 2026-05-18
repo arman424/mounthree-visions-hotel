@@ -69,10 +69,15 @@ export interface Translations {
       standardMountain: string;
       standardCourtyard: string;
       standardNoBalcony: string;
-      deluxe: string;
+      deluxeMountain: string;
+      deluxeCourtyard: string;
+      deluxe2Room: string;
       familySuite: string;
       signatureSuite: string;
+      suite: string;
+      presidential: string;
       chalet: string;
+      chalet2Floor: string;
     };
     features: {
       kingBed: string;
