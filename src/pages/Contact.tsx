@@ -1,30 +1,22 @@
-import { useState, FormEvent } from "react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from "lucide-react";
 import { useI18n } from "@/i18n/context";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const { t } = useI18n();
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    window.location.href = `mailto:info@mounthree.com?subject=Contact from ${formData.name}&body=${formData.message}%0A%0AFrom: ${formData.email}`;
-  };
 
   return (
     <Layout>
       <PageHero image="images/location.jpg" title={t.contactPage.title} subtitle={t.contactPage.subtitle} />
 
       <section className="hotel-section">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20">
-          {/* Contact Info */}
+        <div className="max-w-3xl mx-auto">
           <div className="space-y-10">
-            <div className="space-y-4">
+            <div className="space-y-4 text-center">
               <p className="hotel-subheading">{t.contactPage.reachUs}</p>
               <h2 className="hotel-heading text-foreground">{t.contactPage.weWouldLove}</h2>
-              <div className="gold-divider !mx-0" />
+              <div className="gold-divider" />
             </div>
 
             <div className="space-y-6">
@@ -70,37 +62,13 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-4 justify-center">
               <a href="https://www.facebook.com/346457221890276" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-primary/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors">
                 <Facebook size={18} />
               </a>
               <a href="https://www.instagram.com/mounthree.mp/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-primary/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors">
                 <Instagram size={18} />
               </a>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="space-y-6">
-            <div className="bg-card border border-border p-8 md:p-10">
-              <h3 className="font-serif text-2xl text-foreground mb-6">{t.contactPage.sendMessage}</h3>
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div>
-                  <label className="text-xs uppercase tracking-[0.15em] text-muted-foreground block mb-2">{t.contactPage.name}</label>
-                  <input type="text" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} className="w-full bg-background border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors" placeholder={t.contactPage.namePlaceholder} />
-                </div>
-                <div>
-                  <label className="text-xs uppercase tracking-[0.15em] text-muted-foreground block mb-2">{t.contactPage.emailLabel}</label>
-                  <input type="email" required value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} className="w-full bg-background border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors" placeholder={t.contactPage.emailPlaceholder} />
-                </div>
-                <div>
-                  <label className="text-xs uppercase tracking-[0.15em] text-muted-foreground block mb-2">{t.contactPage.message}</label>
-                  <textarea required rows={5} value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} className="w-full bg-background border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors resize-none" placeholder={t.contactPage.messagePlaceholder} />
-                </div>
-                <button type="submit" className="w-full text-xs uppercase tracking-[0.2em] font-semibold px-6 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
-                  {t.contactPage.send}
-                </button>
-              </form>
             </div>
           </div>
         </div>
