@@ -6,15 +6,15 @@ const Dining = () => {
   const { t } = useI18n();
 
   const menuItems = [
-    { name: t.diningPage.menuItems.vealSteak, price: "11,000 AMD" },
-    { name: t.diningPage.menuItems.tolma, price: "3,300 AMD" },
-    { name: t.diningPage.menuItems.tzhvzhik, price: "4,500 AMD" },
-    { name: t.diningPage.menuItems.steamedTrout, price: "6,500 AMD" },
-    { name: t.diningPage.menuItems.grilledChicken, price: "4,200 AMD" },
-    { name: t.diningPage.menuItems.grilledSeabass, price: "7,000 AMD" },
-    { name: t.diningPage.menuItems.rabbitCutlet, price: "5,500 AMD" },
-    { name: t.diningPage.menuItems.lambShoulder, price: "19,000 AMD" },
-    { name: t.diningPage.menuItems.legOfLamb, price: "7,500 AMD" },
+    { name: t.diningPage.menuItems.vealSteak, price: "13,000 AMD" },
+    { name: t.diningPage.menuItems.tolma, price: "4,000 AMD" },
+    { name: t.diningPage.menuItems.tzhvzhik, price: "5,300 AMD" },
+    { name: t.diningPage.menuItems.steamedTrout, price: "7,800 AMD" },
+    { name: t.diningPage.menuItems.grilledChicken, price: "5,000 AMD" },
+    { name: t.diningPage.menuItems.grilledSeabass, price: "5,700 AMD" },
+    { name: t.diningPage.menuItems.rabbitCutlet, price: "6,500 AMD" },
+    { name: t.diningPage.menuItems.lambShoulder, price: "23,000 AMD" },
+    { name: t.diningPage.menuItems.legOfLamb, price: "8,500 AMD" },
   ];
 
   return (
@@ -52,7 +52,7 @@ const Dining = () => {
             ))}
           </div>
           <div className="text-center">
-            <a href="https://mabell.io/am/restaurant/01980835-1fe1-7114-a814-7e0ea99b9e16/service/0198312b-68b1-708b-93eb-43a3e0c0d3c5" target="_blank" rel="noopener noreferrer" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+            <a href="https://mabell.io/am/restaurant/01980835-1fe1-7114-a814-7e0ea99b9e16/service/019d2ed6-d078-7296-991e-0eb5ffdd10f4" target="_blank" rel="noopener noreferrer" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               {t.diningPage.viewFullMenu}
             </a>
           </div>
@@ -68,7 +68,7 @@ const Dining = () => {
             <h2 className="hotel-heading text-foreground">{t.diningPage.rooftopTitle}</h2>
             <div className="gold-divider !mx-0" />
             <p className="hotel-body">{t.diningPage.rooftopText}</p>
-            <a href="https://mabell.io/am/restaurant/01980835-1fe1-7114-a814-7e0ea99b9e16/service/019d2ed6-d078-7296-991e-0eb5ffdd10f4" target="_blank" rel="noopener noreferrer" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+            <a href="https://mabell.io/am/restaurant/01980835-1fe1-7114-a814-7e0ea99b9e16/service/0198312b-68b1-708b-93eb-43a3e0c0d3c5" target="_blank" rel="noopener noreferrer" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               {t.diningPage.viewFullMenu}
             </a>
           </div>

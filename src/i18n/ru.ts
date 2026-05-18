@@ -157,10 +157,10 @@ export const ru: Translations = {
       tzhvzhik: "Чжвжик с картофельным пюре",
       steamedTrout: "Форель на пару",
       grilledChicken: "Курица гриль",
-      grilledSeabass: "Сибас гриль",
+      grilledSeabass: "Свиные ребра",
       rabbitCutlet: "Котлета из кролика",
       lambShoulder: "Лопатка ягнёнка",
-      legOfLamb: "Нога ягнёнка",
+      legOfLamb: "Ножка ягненка",
     },
   },
   contactPage: {

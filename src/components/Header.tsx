@@ -35,7 +35,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
       <div className="flex items-center justify-between px-6 md:px-12 lg:px-20 py-4 min-h-[72px]">
         <Link to="/" className="flex items-center gap-3 shrink-0">
-          <img src="images/logo.jpg" alt="Mounthree" className="w-24 sm:w-28 md:w-32 h-auto object-contain" />
+          <img src="images/logo.png" alt="Mounthree" className="w-24 sm:w-28 md:w-32 h-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
