@@ -2,20 +2,20 @@ import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import { useI18n } from "@/i18n/context";
 
-const menuItems = [
-  { name: "Veal Steak", price: "11,000 AMD" },
-  { name: "Tolma with Grape Leaves", price: "3,300 AMD" },
-  { name: "Tzhvzhik with Mashed Potatoes", price: "4,500 AMD" },
-  { name: "Steamed Trout", price: "6,500 AMD" },
-  { name: "Grilled Chicken", price: "4,200 AMD" },
-  { name: "Grilled Seabass", price: "7,000 AMD" },
-  { name: "Rabbit Cutlet", price: "5,500 AMD" },
-  { name: "Lamb Shoulder", price: "19,000 AMD" },
-  { name: "Leg of Lamb", price: "7,500 AMD" },
-];
-
 const Dining = () => {
   const { t } = useI18n();
+
+  const menuItems = [
+    { name: t.diningPage.menuItems.vealSteak, price: "11,000 AMD" },
+    { name: t.diningPage.menuItems.tolma, price: "3,300 AMD" },
+    { name: t.diningPage.menuItems.tzhvzhik, price: "4,500 AMD" },
+    { name: t.diningPage.menuItems.steamedTrout, price: "6,500 AMD" },
+    { name: t.diningPage.menuItems.grilledChicken, price: "4,200 AMD" },
+    { name: t.diningPage.menuItems.grilledSeabass, price: "7,000 AMD" },
+    { name: t.diningPage.menuItems.rabbitCutlet, price: "5,500 AMD" },
+    { name: t.diningPage.menuItems.lambShoulder, price: "19,000 AMD" },
+    { name: t.diningPage.menuItems.legOfLamb, price: "7,500 AMD" },
+  ];
 
   return (
     <Layout>

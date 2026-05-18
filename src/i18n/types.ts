@@ -146,6 +146,17 @@ export interface Translations {
     hoursText: string;
     callUs: string;
     emailUs: string;
+    menuItems: {
+      vealSteak: string;
+      tolma: string;
+      tzhvzhik: string;
+      steamedTrout: string;
+      grilledChicken: string;
+      grilledSeabass: string;
+      rabbitCutlet: string;
+      lambShoulder: string;
+      legOfLamb: string;
+    };
   };
   contactPage: {
     subtitle: string;
