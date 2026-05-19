@@ -42,6 +42,7 @@ export interface Translations {
     label: string;
     title: string;
     viewAll: string;
+    seeMore: string;
     guests: string;
     from: string;
   };
