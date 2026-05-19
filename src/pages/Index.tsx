@@ -142,7 +142,7 @@ const Index = () => {
               </div>
             ))}
           </div>
-          <div className="text-center pt-4">
+          <div className="text-center !mt-6">
             <Link to="/rooms" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.1em] font-semibold px-5 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               {t.roomsPreview.seeMore} <ArrowRight size={14} />
             </Link>
