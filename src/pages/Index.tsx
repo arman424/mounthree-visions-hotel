@@ -142,6 +142,11 @@ const Index = () => {
               </div>
             ))}
           </div>
+          <div className="text-center pt-4">
+            <Link to="/rooms" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+              {t.roomsPreview.viewAll} <ArrowRight size={14} />
+            </Link>
+          </div>
         </div>
       </section>
 
