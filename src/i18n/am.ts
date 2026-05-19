@@ -42,6 +42,7 @@ export const am: Translations = {
     label: "Կեցություն",
     title: "Սենյակներ և լյուքսեր",
     viewAll: "Տեսնել բոլորը",
+    seeMore: "Տեսնել ավելին",
     guests: "Հյուրեր",
     from: "Սկսած",
   },

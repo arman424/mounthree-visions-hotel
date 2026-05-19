@@ -42,6 +42,7 @@ export const en: Translations = {
     label: "Accommodations",
     title: "Rooms & Suites",
     viewAll: "View All Rooms",
+    seeMore: "See More",
     guests: "Guests",
     from: "From",
   },
