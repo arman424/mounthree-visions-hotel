@@ -42,6 +42,7 @@ export const ru: Translations = {
     label: "Размещение",
     title: "Номера и Люксы",
     viewAll: "Все номера",
+    seeMore: "Смотреть ещё",
     guests: "Гостей",
     from: "От",
   },
