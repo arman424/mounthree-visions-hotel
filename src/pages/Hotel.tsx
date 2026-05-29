@@ -20,7 +20,7 @@ const Hotel = () => {
       {/* Room Service */}
       <section className="hotel-section bg-card">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img src="images/room2.jpg" alt="Room Service" className="w-full aspect-[4/3] object-cover" loading="lazy" />
+          <img src="images/signature-lux1.jpeg" alt="Room Service" className="w-full aspect-[4/3] object-cover" loading="lazy" />
           <div className="space-y-6">
             <p className="hotel-subheading">{t.facilitiesPage.roomServiceLabel}</p>
             <h2 className="hotel-heading text-foreground">{t.facilitiesPage.roomServiceTitle}</h2>
@@ -67,7 +67,7 @@ const Hotel = () => {
           </div>
           <Carousel className="w-full group" opts={{ loop: true }}>
             <CarouselContent>
-              {["images/gym1.jpg", "images/gym2.jpg"].map((img, i) => (
+              {["images/gym1.jpeg", "images/gym2.jpeg", "images/gym3.jpeg", "images/gym4.jpeg", "images/gym5.jpeg", "images/gym6.jpeg", "images/gym7.jpeg"].map((img, i) => (
                 <CarouselItem key={i}>
                   <img src={img} alt={`Gym & Game Zone ${i + 1}`} className="w-full aspect-[4/3] object-cover" loading="lazy" />
                 </CarouselItem>
@@ -84,7 +84,7 @@ const Hotel = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <Carousel className="w-full group" opts={{ loop: true }}>
             <CarouselContent>
-              {["images/playroom1.jpg", "images/playroom2.jpg"].map((img, i) => (
+              {["images/playroom1.jpeg", "images/playroom2.jpeg", "images/playroom3.jpeg", "images/playroom4.jpeg"].map((img, i) => (
                 <CarouselItem key={i}>
                   <img src={img} alt={`Play Room ${i + 1}`} className="w-full aspect-[4/3] object-cover" loading="lazy" />
                 </CarouselItem>

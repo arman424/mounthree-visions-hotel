@@ -19,7 +19,7 @@ const roomsData = [
   },
   {
     nameKey: "standardCourtyard" as const,
-    images: ["images/room1.jpeg", "images/room11.jpeg", "images/room7.jpg"],
+    images: ["images/standard-countryard1.jpeg", "images/standard-countryard2.jpeg", "images/standard-countryard3.jpeg", "images/standard-countryard4.jpeg"],
     guests: 2, bathrooms: 1, area: "26-31 m²", qty: 6, price: "67,000֏",
     featureKeys: ["twinBeds", "showerBathroom", "modernAmenitiesPleasant", "courtyardBalcony"] as const,
   },
@@ -37,13 +37,13 @@ const roomsData = [
   },
   {
     nameKey: "standardTwinNoBalcony" as const,
-    images: ["images/room2.jpg", "images/room11.jpeg"],
+    images: ["images/no-balcony1.jpeg", "images/no-balcony2.jpeg", "images/no-balcony3.jpeg"],
     guests: 2, bathrooms: 1, area: "26-31 m²", qty: 2, price: "64,000֏",
     featureKeys: ["twinBeds", "showerBathroom", "modernAmenitiesPleasant"] as const,
   },
   {
     nameKey: "deluxeMountain" as const,
-    images: ["images/room3.jpg", "images/room10.jpg", "images/room9.jpg"],
+    images: ["images/delux-forest1.jpeg", "images/delux-forest2.jpeg", "images/delux-forest3.jpeg", "images/delux-forest4.jpeg"],
     guests: 2, bathrooms: 1, area: "36 m²", qty: 2, price: "87,000֏",
     featureKeys: ["kingBedComfort", "showerBathroom", "spaciousElegant", "modernAmenitiesPleasant", "balconyViewsBeautiful"] as const,
   },
@@ -67,19 +67,19 @@ const roomsData = [
   },
   {
     nameKey: "signatureSuite" as const,
-    images: ["images/room5.jpg", "images/room8.jpg", "images/room3.jpg"],
+    images: ["images/signature-lux1.jpeg", "images/signature-lux2.jpeg", "images/signature-lux3.jpeg", "images/signature-lux4.jpeg"],
     guests: 2, bathrooms: 1, area: "43-63 m²", qty: 5, price: "148,000֏",
     featureKeys: ["superKingBed", "tubView", "elegantFurnitureSofa", "sharingBalconies"] as const,
   },
   {
     nameKey: "suite" as const,
-    images: ["images/room5.jpg", "images/room3.jpg", "images/room8.jpg"],
+    images: ["images/lux1.jpeg", "images/lux2.jpeg", "images/lux3.jpeg", "images/lux4.jpeg"],
     guests: 2, bathrooms: 1, area: "55 m²", qty: 2, price: "108,000֏",
     featureKeys: ["superKingBed", "tubView", "elegantFurnitureSofa", "balconyViewsBeautiful"] as const,
   },
   {
     nameKey: "presidential" as const,
-    images: ["images/room8.jpg", "images/room5.jpg", "images/room4.jpg"],
+    images: ["images/presidental.jpeg", "images/presidental2.jpeg", "images/presidental3.jpeg", "images/presidental4.jpeg", "images/presidental5.jpeg", "images/presidental6.jpeg"],
     guests: 4, bathrooms: 2, area: "120 m²", qty: 1, price: "390,000֏",
     featureKeys: ["superKingBed", "showerTubView", "elegantFurnitureSofa", "sharingBalconies", "terraceViews"] as const,
   },

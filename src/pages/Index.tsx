@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import EventPopup from "@/components/EventPopup";
 import { useI18n } from "@/i18n/context";
 import { Wifi, Dumbbell, UtensilsCrossed, Wine, Car, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import {
@@ -12,11 +11,11 @@ import {
 } from "@/components/ui/carousel";
 
 const rooms = [
-  { nameKey: "standardMountain" as const, images: ["images/room2.jpg", "images/room7.jpg", "images/room11.jpeg"], guests: 2, area: "26-31 m²", price: "69,000֏" },
-  { nameKey: "standardCourtyard" as const, images: ["images/room1.jpeg", "images/room11.jpeg", "images/room7.jpg"], guests: 2, area: "26-31 m²", price: "67,000֏" },
+  { nameKey: "deluxeMountain" as const, images: ["images/delux-forest1.jpeg", "images/delux-forest2.jpeg", "images/delux-forest3.jpeg"], guests: 2, area: "36 m²", price: "87,000֏" },
+  { nameKey: "standardCourtyard" as const, images: ["images/standard-countryard1.jpeg", "images/standard-countryard2.jpeg", "images/standard-countryard3.jpeg"], guests: 2, area: "26-31 m²", price: "67,000֏" },
   { nameKey: "familySuite" as const, images: ["images/room4.jpg", "images/room9.jpg", "images/room10.jpg"], guests: 2, area: "43-63 m²", price: "98,000֏" },
-  { nameKey: "deluxe" as const, images: ["images/room3.jpg", "images/room10.jpg", "images/room9.jpg"], guests: 2, area: "36 m²", price: "87,000֏" },
-  { nameKey: "signatureSuite" as const, images: ["images/room5.jpg", "images/room8.jpg", "images/room3.jpg"], guests: 2, area: "43-63 m²", price: "148,000֏" },
+  { nameKey: "deluxeCourtyard" as const, images: ["images/room3.jpg", "images/room10.jpg", "images/room9.jpg"], guests: 2, area: "36 m²", price: "87,000֏" },
+  { nameKey: "signatureSuite" as const, images: ["images/signature-lux1.jpeg", "images/signature-lux2.jpeg", "images/signature-lux3.jpeg"], guests: 2, area: "43-63 m²", price: "148,000֏" },
   { nameKey: "chalet" as const, images: ["images/room5.jpg", "images/room8.jpg", "images/room4.jpg"], guests: 2, area: "45 m²", price: "108,000֏" },
 ];
 
