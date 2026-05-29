@@ -37,6 +37,8 @@ export interface Translations {
     restaurantDesc: string;
     bar: string;
     barDesc: string;
+    parking: string;
+    parkingDesc: string;
   };
   roomsPreview: {
     label: string;
@@ -70,6 +72,8 @@ export interface Translations {
       standardMountain: string;
       standardCourtyard: string;
       standardNoBalcony: string;
+      standardTwin: string;
+      standardTwinNoBalcony: string;
       deluxeMountain: string;
       deluxeCourtyard: string;
       deluxe2Room: string;
@@ -108,6 +112,9 @@ export interface Translations {
     roomServiceLabel: string;
     roomServiceTitle: string;
     roomServiceText: string;
+    parkingLabel: string;
+    parkingTitle: string;
+    parkingText: string;
     diningLabel: string;
     diningTitle: string;
     diningText: string;
