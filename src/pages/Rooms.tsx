@@ -30,6 +30,18 @@ const roomsData = [
     featureKeys: ["kingBed", "showerBathroom", "modernAmenitiesPleasant"] as const,
   },
   {
+    nameKey: "standardTwin" as const,
+    images: ["images/room1.jpeg", "images/room7.jpg", "images/room11.jpeg"],
+    guests: 2, bathrooms: 1, area: "26-31 m²", qty: 3, price: "67,000֏",
+    featureKeys: ["twinBeds", "showerBathroom", "modernAmenitiesPleasant", "balconyViews"] as const,
+  },
+  {
+    nameKey: "standardTwinNoBalcony" as const,
+    images: ["images/room2.jpg", "images/room11.jpeg"],
+    guests: 2, bathrooms: 1, area: "26-31 m²", qty: 2, price: "64,000֏",
+    featureKeys: ["twinBeds", "showerBathroom", "modernAmenitiesPleasant"] as const,
+  },
+  {
     nameKey: "deluxeMountain" as const,
     images: ["images/room3.jpg", "images/room10.jpg", "images/room9.jpg"],
     guests: 2, bathrooms: 1, area: "36 m²", qty: 2, price: "87,000֏",

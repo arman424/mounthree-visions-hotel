@@ -121,6 +121,16 @@ const Hotel = () => {
           </Link>
         </div>
       </section>
+
+      {/* Free Secure Parking */}
+      <section className="hotel-section bg-card text-center">
+        <div className="max-w-2xl mx-auto space-y-6">
+          <p className="hotel-subheading">{t.facilitiesPage.parkingLabel}</p>
+          <h2 className="hotel-heading text-foreground">{t.facilitiesPage.parkingTitle}</h2>
+          <div className="gold-divider" />
+          <p className="hotel-body">{t.facilitiesPage.parkingText}</p>
+        </div>
+      </section>
     </Layout>
   );
 };

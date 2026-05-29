@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import EventPopup from "@/components/EventPopup";
 import { useI18n } from "@/i18n/context";
-import { Wifi, Dumbbell, UtensilsCrossed, Wine, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { Wifi, Dumbbell, UtensilsCrossed, Wine, Car, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -28,6 +28,7 @@ const Index = () => {
     { icon: Dumbbell, title: t.amenities.sport, desc: t.amenities.sportDesc },
     { icon: UtensilsCrossed, title: t.amenities.restaurant, desc: t.amenities.restaurantDesc },
     { icon: Wine, title: t.amenities.bar, desc: t.amenities.barDesc },
+    { icon: Car, title: t.amenities.parking, desc: t.amenities.parkingDesc },
   ];
 
   return (
@@ -94,7 +95,7 @@ const Index = () => {
             <h2 className="hotel-heading text-foreground">{t.amenities.title}</h2>
             <div className="gold-divider" />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-10">
             {benefits.map((b) => (
               <div key={b.title} className="space-y-4 text-center">
                 <div className="w-16 h-16 mx-auto border border-primary/30 flex items-center justify-center">
