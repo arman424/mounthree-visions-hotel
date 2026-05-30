@@ -13,7 +13,7 @@ import {
 const roomsData = [
   {
     nameKey: "standardMountain" as const,
-    images: ["images/room2.jpg", "images/room7.jpg", "images/room11.jpeg"],
+    images: ["images/room2.jpg"],
     guests: 2, bathrooms: 1, area: "26-31 m²", qty: 15, price: "69,000֏",
     featureKeys: ["kingBed", "showerBathroom", "modernAmenities", "balconyViews"] as const,
   },
@@ -25,13 +25,13 @@ const roomsData = [
   },
   {
     nameKey: "standardNoBalcony" as const,
-    images: ["images/room2.jpg", "images/room7.jpg"],
+    images: ["images/room2.jpg"],
     guests: 2, bathrooms: 1, area: "26-31 m²", qty: 15, price: "64,000֏",
     featureKeys: ["kingBed", "showerBathroom", "modernAmenitiesPleasant"] as const,
   },
   {
     nameKey: "standardTwin" as const,
-    images: ["images/room1.jpeg", "images/room7.jpg", "images/room11.jpeg"],
+    images: ["images/room1.jpeg"],
     guests: 2, bathrooms: 1, area: "26-31 m²", qty: 3, price: "67,000֏",
     featureKeys: ["twinBeds", "showerBathroom", "modernAmenitiesPleasant", "balconyViews"] as const,
   },
@@ -49,19 +49,19 @@ const roomsData = [
   },
   {
     nameKey: "deluxeCourtyard" as const,
-    images: ["images/room3.jpg", "images/room9.jpg", "images/room10.jpg"],
+    images: ["images/delux-countryard1.jpeg", "images/delux-countryard2.jpeg", "images/delux-countryard3.jpeg", "images/delux-countryard4.jpeg"],
     guests: 2, bathrooms: 1, area: "36 m²", qty: 2, price: "83,000֏",
     featureKeys: ["kingBedComfort", "showerBathroom", "spaciousElegant", "courtyardBalcony"] as const,
   },
   {
     nameKey: "deluxe2Room" as const,
-    images: ["images/room10.jpg", "images/room3.jpg", "images/room9.jpg"],
+    images: ["images/delux-2room1.jpeg", "images/delux-2room2.jpeg", "images/delux-2room3.jpeg", "images/delux-2room4.jpeg", "images/delux-2room5.jpeg"],
     guests: 4, bathrooms: 1, area: "50 m²", qty: 2, price: "102,000֏",
     featureKeys: ["kingBedComfort", "privateEntrance", "elegantSofa", "balconyViewsBeautiful"] as const,
   },
   {
     nameKey: "familySuite" as const,
-    images: ["images/room4.jpg", "images/room9.jpg", "images/room10.jpg"],
+    images: ["images/family1.jpeg", "images/family2.jpeg", "images/family3.jpeg", "images/family4.jpeg"],
     guests: 4, bathrooms: 1, area: "43-63 m²", qty: 3, price: "98,000֏",
     featureKeys: ["kingBedComfort", "privateEntrance", "elegantSofa", "balconyViewsBeautiful"] as const,
   },
@@ -85,13 +85,13 @@ const roomsData = [
   },
   {
     nameKey: "chalet" as const,
-    images: ["images/room5.jpg", "images/room8.jpg", "images/room4.jpg"],
+    images: ["images/shale.jpeg", "images/shale1.jpeg", "images/shale2.jpeg", "images/shale3.jpeg"],
     guests: 2, bathrooms: 1, area: "45 m²", qty: 2, price: "108,000֏",
     featureKeys: ["superKingBed", "showerTubView", "elegantFurniture", "terraceViews"] as const,
   },
   {
     nameKey: "chalet2Floor" as const,
-    images: ["images/room4.jpg", "images/room5.jpg", "images/room8.jpg"],
+    images: ["images/2shale1.jpeg", "images/2shale2.jpeg", "images/2shale3.jpeg", "images/2shale4.jpeg"],
     guests: 4, bathrooms: 2, area: "90 m²", qty: 1, price: "240,000֏",
     featureKeys: ["superKingBed", "showerTubView", "elegantFurniture", "spaciousElegant", "terraceViews"] as const,
   },
