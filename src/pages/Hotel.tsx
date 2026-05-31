@@ -20,7 +20,7 @@ const Hotel = () => {
       {/* Room Service */}
       <section className="hotel-section bg-card">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img src="/images/signature-lux2.jpeg" alt="Room Service" className="w-full aspect-[4/3] object-cover" loading="lazy" />
+          <img src="/images/signature-lux3.jpeg" alt="Room Service" className="w-full aspect-[4/3] object-cover" loading="lazy" />
           <div className="space-y-6">
             <p className="hotel-subheading">{t.facilitiesPage.roomServiceLabel}</p>
             <h2 className="hotel-heading text-foreground">{t.facilitiesPage.roomServiceTitle}</h2>
