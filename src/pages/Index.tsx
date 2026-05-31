@@ -44,22 +44,31 @@ const Index = () => {
           <p className="hotel-subheading mb-3 md:mb-6">{t.hero.welcomeTo}</p>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-wide text-foreground">Mounthree</h1>
           <p className="font-serif text-lg md:text-2xl text-foreground/70 mt-2 md:mt-4 italic font-light">{t.hero.subtitle}</p>
-          <div className="gold-divider mt-4 md:mt-8" />
+          <div className="gold-divider mt-4 md:mt-8"/>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mt-6 md:mt-10 justify-center">
-            <Link to="/rooms" className="text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+            <Link to="/rooms"
+                  className="text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               {t.hero.exploreRooms}
             </Link>
-            <Link to="/book" className="text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
+            <Link to="/book"
+                  className="text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
               {t.hero.bookNow}
             </Link>
           </div>
+          {/* start Search form script */}
+          <div id="block-search">
+            <div id="be-search-form" className="be-container">
+              <a href="https://exely.com/" rel="nofollow" target="_blank">Hotel management software</a>
+            </div>
+          </div>
+          {/* end Search form script */}
         </div>
       </section>
 
       {/* About */}
       <section className="hotel-section">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <div className="space-y-6">
+        <div className="space-y-6">
             <p className="hotel-subheading">{t.about.label}</p>
             <h2 className="hotel-heading text-foreground">{t.about.title}</h2>
             <div className="gold-divider !mx-0" />
