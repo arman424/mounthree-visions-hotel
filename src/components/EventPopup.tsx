@@ -42,7 +42,7 @@ const EventPopup = () => {
         </div>
 
         <a
-          href="/book"
+          href="/en/booking"
           onClick={close}
           className="inline-block w-full text-center text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
         >

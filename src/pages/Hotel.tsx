@@ -20,7 +20,7 @@ const Hotel = () => {
       {/* Room Service */}
       <section className="hotel-section bg-card">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img src="images/signature-lux1.jpeg" alt="Room Service" className="w-full aspect-[4/3] object-cover" loading="lazy" />
+          <img src="/images/signature-lux1.jpeg" alt="Room Service" className="w-full aspect-[4/3] object-cover" loading="lazy" />
           <div className="space-y-6">
             <p className="hotel-subheading">{t.facilitiesPage.roomServiceLabel}</p>
             <h2 className="hotel-heading text-foreground">{t.facilitiesPage.roomServiceTitle}</h2>
@@ -38,11 +38,11 @@ const Hotel = () => {
             <h2 className="hotel-heading text-foreground">{t.facilitiesPage.wellnessTitle}</h2>
             <div className="gold-divider !mx-0" />
             <p className="hotel-body">{t.facilitiesPage.wellnessText}</p>
-            <Link to="/book" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-all mt-4">
+            <Link to="/en/booking" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-all mt-4">
               {t.facilitiesPage.bookYourStay}
             </Link>
           </div>
-          <img src="images/spa.jpg" alt="Swimming Pool & Spa" className="w-full aspect-[4/3] object-cover" loading="lazy" />
+          <img src="/images/spa.jpg" alt="Swimming Pool & Spa" className="w-full aspect-[4/3] object-cover" loading="lazy" />
         </div>
       </section>
 
@@ -116,7 +116,7 @@ const Hotel = () => {
               </li>
             ))}
           </ul>
-          <Link to="/book" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all mt-4">
+          <Link to="/en/booking" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all mt-4">
             {t.facilitiesPage.bookNow}
           </Link>
         </div>

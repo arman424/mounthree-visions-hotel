@@ -35,7 +35,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
       <div className="flex items-center justify-between px-6 md:px-12 lg:px-20 py-4 min-h-[72px]">
         <Link to="/" className="flex items-center gap-3 shrink-0">
-          <img src="images/logo.png" alt="Mounthree" className="w-32 sm:w-36 md:w-40 lg:w-44 h-auto object-contain" />
+          <img src="/images/logo.png" alt="Mounthree" className="w-32 sm:w-36 md:w-40 lg:w-44 h-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
@@ -77,7 +77,7 @@ const Header = () => {
           </DropdownMenu>
 
           <Link
-            to="/book"
+            to="/en/booking"
             className="text-[11px] xl:text-xs uppercase tracking-[0.15em] xl:tracking-[0.2em] font-semibold whitespace-nowrap px-4 xl:px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
           >
             {t.nav.bookNow}
@@ -128,7 +128,7 @@ const Header = () => {
             </div>
 
             <Link
-              to="/book"
+              to="/en/booking"
               onClick={() => setIsOpen(false)}
               className="text-sm uppercase tracking-[0.15em] font-semibold px-6 py-3 border border-primary text-primary text-center mt-2"
             >

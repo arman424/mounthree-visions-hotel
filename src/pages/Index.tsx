@@ -36,7 +36,7 @@ const Index = () => {
       <section className="relative h-[88vh] md:h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat">
           <video className="w-full h-full object-cover" playsInline autoPlay loop muted>
-            <source type="video/mp4" src="images/mounthree.mp4" />
+            <source type="video/mp4" src="/images/mounthree.mp4" />
           </video>
         </div>
         <div className="hero-overlay" />
@@ -50,7 +50,7 @@ const Index = () => {
                   className="text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               {t.hero.exploreRooms}
             </Link>
-            <Link to="/book"
+            <Link to="/en/booking"
                   className="text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
               {t.hero.bookNow}
             </Link>
@@ -78,7 +78,7 @@ const Index = () => {
             </Link>
           </div>
           <div className="relative">
-            <img src="images/main.webp" alt="Hotel Mounthree aerial view" className="w-full aspect-[4/5] object-cover" loading="lazy" />
+            <img src="/images/main.webp" alt="Hotel Mounthree aerial view" className="w-full aspect-[4/5] object-cover" loading="lazy" />
           </div>
         </div>
       </section>
@@ -163,7 +163,7 @@ const Index = () => {
       <section className="hotel-section bg-card">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div className="relative order-2 md:order-1">
-            <img src="images/restaurant.webp" alt="Mounthree Restaurant" className="w-full aspect-[4/5] object-cover" loading="lazy" />
+            <img src="/images/restaurant.webp" alt="Mounthree Restaurant" className="w-full aspect-[4/5] object-cover" loading="lazy" />
           </div>
           <div className="space-y-6 order-1 md:order-2">
             <p className="hotel-subheading">{t.restaurantPreview.label}</p>
@@ -186,7 +186,7 @@ const Index = () => {
           <h2 className="hotel-heading text-foreground">{t.cta.title}</h2>
           <div className="gold-divider" />
           <p className="hotel-body max-w-xl mx-auto">{t.cta.text}</p>
-          <Link to="/book" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-all mt-4">
+          <Link to="/en/booking" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-all mt-4">
             {t.cta.bookYourStay}
           </Link>
         </div>

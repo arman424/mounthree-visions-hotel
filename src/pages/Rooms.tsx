@@ -145,7 +145,7 @@ const Rooms = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to="/book" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all mt-2">
+                <Link to="/en/booking" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all mt-2">
                   {t.roomsPage.bookNowFrom} {room.price}
                 </Link>
               </div>

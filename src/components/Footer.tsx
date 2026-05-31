@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <img src="images/logo.png" alt="Mounthree" className="h-12" />
+            <img src="/images/logo.png" alt="Mounthree" className="h-12" />
             <p className="hotel-body text-sm">{t.footer.brandText}</p>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/346457221890276" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
@@ -77,7 +77,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <Link to="/book" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+            <Link to="/en/booking" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               {t.footer.bookNow}
             </Link>
           </div>
