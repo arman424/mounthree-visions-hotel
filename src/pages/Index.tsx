@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { useI18n } from "@/i18n/context";
-import { Wifi, Dumbbell, UtensilsCrossed, Wine, Car, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { Wifi, Dumbbell, UtensilsCrossed, Wine, Car, ArrowRight, Loader2 } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 
 const rooms = [
   { nameKey: "deluxeMountain" as const, images: ["images/delux-forest1.jpeg", "images/delux-forest2.jpeg", "images/delux-forest3.jpeg"], guests: 2, area: "36 m²", price: "87,000֏" },
@@ -21,6 +22,27 @@ const rooms = [
 
 const Index = () => {
   const { t } = useI18n();
+  const [isSearchReady, setIsSearchReady] = useState(false);
+
+  useEffect(() => {
+    const container = document.getElementById("be-search-form");
+    if (!container) return;
+
+    // Widget starts with one hidden fallback anchor; any extra node means script rendered content.
+    const checkReady = () => {
+      const ready =
+        container.childElementCount > 1 ||
+        (container.firstElementChild?.tagName !== "A" && container.childElementCount > 0);
+      setIsSearchReady(ready);
+    };
+
+    checkReady();
+
+    const observer = new MutationObserver(checkReady);
+    observer.observe(container, { childList: true, subtree: true });
+
+    return () => observer.disconnect();
+  }, []);
 
   const benefits = [
     { icon: Wifi, title: t.amenities.wifi, desc: t.amenities.wifiDesc },
@@ -57,8 +79,27 @@ const Index = () => {
           </div>
           {/* start Search form script */}
           <div id="block-search">
-            <div id="be-search-form" className="be-container">
-              <a href="https://exely.com/" rel="nofollow" target="_blank">Hotel management software</a>
+            {!isSearchReady && (
+              <div className="be-container flex items-center justify-center py-6" aria-hidden="true">
+                <Loader2 className="h-5 w-5 animate-spin text-primary" />
+              </div>
+            )}
+            <div
+              id="be-search-form"
+              className="be-container"
+              style={{ display: isSearchReady ? "block" : "none" }}
+              aria-busy={!isSearchReady}
+            >
+              <a
+                href="https://exely.com/"
+                rel="nofollow noreferrer"
+                target="_blank"
+                style={{ display: "none" }}
+                aria-hidden="true"
+                tabIndex={-1}
+              >
+                Hotel management software
+              </a>
             </div>
           </div>
           {/* end Search form script */}
