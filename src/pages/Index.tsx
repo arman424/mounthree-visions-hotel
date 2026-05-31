@@ -10,6 +10,7 @@ import {
   CarouselNext,
 } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
+import { runBookingEngine } from "@/lib/bookingEngine";
 
 const rooms = [
   { nameKey: "deluxeMountain" as const, images: ["images/delux-forest1.jpeg", "images/delux-forest2.jpeg", "images/delux-forest3.jpeg"], guests: 2, area: "36 m²", price: "87,000֏" },
@@ -23,6 +24,12 @@ const rooms = [
 const Index = () => {
   const { t } = useI18n();
   const [isSearchReady, setIsSearchReady] = useState(false);
+
+  useEffect(() => {
+    runBookingEngine([
+      ["embed", "search-form", { container: "be-search-form" }],
+    ]);
+  }, []);
 
   useEffect(() => {
     const container = document.getElementById("be-search-form");
