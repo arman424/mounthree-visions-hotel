@@ -56,7 +56,7 @@ const roomsData = [
   {
     nameKey: "deluxe2Room" as const,
     images: ["images/delux-2room1.jpeg", "images/delux-2room2.jpeg", "images/delux-2room3.jpeg", "images/delux-2room4.jpeg", "images/delux-2room5.jpeg"],
-    guests: 4, bathrooms: 1, area: "50 m²", qty: 2, price: "102,000֏",
+    guests: 4, bathrooms: 1, area: "50 m²", qty: 2, price: "108,000֏",
     featureKeys: ["kingBedComfort", "privateEntrance", "elegantSofa", "balconyViewsBeautiful"] as const,
   },
   {
@@ -67,7 +67,7 @@ const roomsData = [
   },
   {
     nameKey: "signatureSuite" as const,
-    images: ["images/signature-lux1.jpeg", "images/signature-lux2.jpeg", "images/signature-lux3.jpeg", "images/signature-lux4.jpeg"],
+    images: ["images/signature-lux4.jpeg", "images/signature-lux2.jpeg", "images/signature-lux3.jpeg"],
     guests: 2, bathrooms: 1, area: "43-63 m²", qty: 5, price: "148,000֏",
     featureKeys: ["superKingBed", "tubView", "elegantFurnitureSofa", "sharingBalconies"] as const,
   },

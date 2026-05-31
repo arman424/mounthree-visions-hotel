@@ -78,7 +78,7 @@ export const am: Translations = {
       deluxeCourtyard: "Դելյուքս՝ բակի տեսարանով",
       deluxe2Room: "Դելյուքս 2-սենյականոց",
       familySuite: "Ընտանեկան լյուքս",
-      signatureSuite: "Սիգնեյչր լյուքս",
+      signatureSuite: "Հեղինակային լյուքս",
       suite: "Լյուքս",
       presidential: "Նախագահական",
       chalet: "Շալե",
