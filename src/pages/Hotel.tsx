@@ -103,22 +103,25 @@ const Hotel = () => {
       </section>
 
       {/* Conference Hall */}
-      <section className="hotel-section text-center">
-        <div className="max-w-2xl mx-auto space-y-6">
-          <p className="hotel-subheading">{t.facilitiesPage.conferenceLabel}</p>
-          <h2 className="hotel-heading text-foreground">{t.facilitiesPage.conferenceTitle}</h2>
-          <div className="gold-divider" />
-          <p className="hotel-body">{t.facilitiesPage.conferenceText}</p>
-          <ul className="flex flex-wrap justify-center gap-4 mt-4">
-            {t.facilitiesPage.conferenceIncludes.map((item) => (
-              <li key={item} className="text-sm text-muted-foreground border border-border px-4 py-2">
-                {item}
-              </li>
-            ))}
-          </ul>
-          <Link to="/en/booking" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all mt-4">
-            {t.facilitiesPage.bookNow}
-          </Link>
+      <section className="hotel-section">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+          <img src="/images/conference.png" alt="Conference Hall" className="w-full aspect-[4/3] object-cover" loading="lazy" />
+          <div className="space-y-6">
+            <p className="hotel-subheading">{t.facilitiesPage.conferenceLabel}</p>
+            <h2 className="hotel-heading text-foreground">{t.facilitiesPage.conferenceTitle}</h2>
+            <div className="gold-divider !mx-0" />
+            <p className="hotel-body">{t.facilitiesPage.conferenceText}</p>
+            <ul className="flex flex-wrap gap-3 mt-4">
+              {t.facilitiesPage.conferenceIncludes.map((item) => (
+                <li key={item} className="text-sm text-muted-foreground border border-border px-4 py-2">
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <Link to="/en/booking" className="inline-block text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all mt-4">
+              {t.facilitiesPage.bookNow}
+            </Link>
+          </div>
         </div>
       </section>
 

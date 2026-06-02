@@ -11,9 +11,9 @@ const Contact = () => {
       <PageHero image="images/location.jpg" title={t.contactPage.title} subtitle={t.contactPage.subtitle} />
 
       <section className="hotel-section">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="space-y-10">
-            <div className="space-y-6">
+            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-8">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 border border-primary/30 flex items-center justify-center shrink-0">
                   <MapPin size={18} className="text-primary" />

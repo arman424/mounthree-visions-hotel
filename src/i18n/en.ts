@@ -39,6 +39,8 @@ export const en: Translations = {
     barDesc: "Curated cocktails and premium spirits",
     parking: "Free Secure Parking",
     parkingDesc: "Complimentary on-site parking with 24/7 surveillance",
+    gaming: "Gaming Zone",
+    gamingDesc: "Modern gaming zone open 24/7 for guests to enjoy",
   },
   roomsPreview: {
     label: "Accommodations",

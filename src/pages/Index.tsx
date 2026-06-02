@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { useI18n } from "@/i18n/context";
-import { Wifi, Dumbbell, UtensilsCrossed, Wine, Car, ArrowRight, Loader2 } from "lucide-react";
+import { Wifi, Dumbbell, UtensilsCrossed, Wine, Car, Gamepad2, ArrowRight, Loader2 } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -57,6 +57,7 @@ const Index = () => {
     { icon: UtensilsCrossed, title: t.amenities.restaurant, desc: t.amenities.restaurantDesc },
     { icon: Wine, title: t.amenities.bar, desc: t.amenities.barDesc },
     { icon: Car, title: t.amenities.parking, desc: t.amenities.parkingDesc },
+    { icon: Gamepad2, title: t.amenities.gaming, desc: t.amenities.gamingDesc },
   ];
 
   return (
