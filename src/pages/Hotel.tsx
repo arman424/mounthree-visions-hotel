@@ -105,7 +105,6 @@ const Hotel = () => {
       {/* Conference Hall */}
       <section className="hotel-section">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img src="/images/conference.png" alt="Conference Hall" className="w-full aspect-[4/3] object-cover" loading="lazy" />
           <div className="space-y-6">
             <p className="hotel-subheading">{t.facilitiesPage.conferenceLabel}</p>
             <h2 className="hotel-heading text-foreground">{t.facilitiesPage.conferenceTitle}</h2>
@@ -122,6 +121,7 @@ const Hotel = () => {
               {t.facilitiesPage.bookNow}
             </Link>
           </div>
+          <img src="/images/conference.png" alt="Conference Hall" className="w-full aspect-[4/3] object-cover" loading="lazy" />
         </div>
       </section>
 
