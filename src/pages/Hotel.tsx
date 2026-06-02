@@ -126,7 +126,7 @@ const Hotel = () => {
       <section className="hotel-section bg-card text-center">
         <div className="max-w-2xl mx-auto space-y-6">
           <p className="hotel-subheading">{t.facilitiesPage.parkingLabel}</p>
-          <h2 className="hotel-heading text-foreground">{t.facilitiesPage.parkingTitle}</h2>
+          <h2 className="hotel-heading text-foreground break-words">{t.facilitiesPage.parkingTitle}</h2>
           <div className="gold-divider" />
           <p className="hotel-body">{t.facilitiesPage.parkingText}</p>
         </div>

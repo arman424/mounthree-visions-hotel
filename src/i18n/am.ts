@@ -17,7 +17,7 @@ export const am: Translations = {
   },
   about: {
     label: "Մեր մասին",
-    title: "Mounthree հյուրանոց",
+    title: "Mounthree Mystic Peaks",
     text: "Mounthree հյուրանոցը նպատակ ունի դառնալ Լոռու մարզի առաջատար զբոսաշրջային ուղղություններից մեկը՝ առաջարկելով անհատականացված սպասարկում, հարմարավետ սենյակներ և բնության գեղատեսիլ միջավայրում հանգստի անմոռանալի փորձ։",
     discoverMore: "Իմանալ ավելին",
   },
@@ -42,7 +42,7 @@ export const am: Translations = {
   },
   roomsPreview: {
     label: "Կեցություն",
-    title: "Սենյակներ և լյուքսեր",
+    title: "Սենյակներ",
     viewAll: "Տեսնել բոլորը",
     seeMore: "Տեսնել ավելին",
     guests: "Հյուրեր",
@@ -61,8 +61,8 @@ export const am: Translations = {
     bookYourStay: "Ամրագրել",
   },
   roomsPage: {
-    subtitle: "Կեցություն",
-    title: "Սենյակներ և լյուքսեր",
+    subtitle: "",
+    title: "Սենյակներ",
     intro: "Mounthree-ն առաջարկում է տարբեր տեսակի սենյակներ՝ յուրաքանչյուր հյուրի նախասիրություններին համապատասխան։",
     guests: "Հյուրեր",
     bathroom: "Սանհանգույց",
@@ -108,7 +108,7 @@ export const am: Translations = {
   },
   facilitiesPage: {
     subtitle: "Ինչ ենք առաջարկում",
-    title: "Հարմարություններ",
+    title: "Ծառայություններ",
 
     roomServiceLabel: "Սենյակային սպասարկում",
     roomServiceTitle: "Սենյակային սպասարկում",
@@ -128,7 +128,7 @@ export const am: Translations = {
     rooftopTitle: "Aery Rooftop Բար և Ռեստորան",
     rooftopText: "Գլխավոր մասնաշենքի վեցերորդ հարկում գտնվող Rooftop Բարն ու Ռեստորանը առաջարկում են բացառիկ փորձառություն։ Այստեղ կարող եք վայելել նրբաճաշակ ուտեստներ և հեղինակային կոկտեյլներ՝ հիանալով հրաշալի տեսարաններով և վայելելով բացօթյա միջավայրում ընտրված երաժշտություն։",
 
-    wellnessLabel: "Վելնես",
+    wellnessLabel: "Առողջություն",
     wellnessTitle: "Լողավազան և ՍՊԱ",
     wellnessText: "Բացահայտեք հանգստի իսկական օազիս մեր շքեղ լողավազանում և ՍՊԱ-ում։ Ներառում է 12 մետրանոց մեծահասակների լողավազան, մանկական լողավազան, ջակուզի և բարձրակարգ ՍՊԱ ծառայություններ՝ ներառյալ Ֆիննական և գոլորշիով շոգեբաղնիքներ։",
 
@@ -168,7 +168,7 @@ export const am: Translations = {
     rooftopText: "Վայելեք յուրահատուկ մթնոլորտ և տեսարաններ։",
     hoursLabel: "Աշխատանքային ժամեր",
     hoursTitle: "Ամրագրում",
-    hoursText: "Երկուշաբթի — Կիրակի · 16:00 — 23:00",
+    hoursText: "Երկուշաբթի — Կիրակի · 12:00 — 23:00",
     callUs: "Զանգահարել",
     emailUs: "Գրել մեզ",
     menuItems: {
@@ -193,7 +193,7 @@ export const am: Translations = {
     phone: "Հեռախոս",
     email: "Էլ. փոստ",
     restaurantHours: "Ռեստորանի ժամեր",
-    restaurantHoursValue: "Երկուշաբթի — Կիրակի · 16:00 — 23:00",
+    restaurantHoursValue: "Երկուշաբթի — Կիրակի · 12:00 — 23:00",
     sendMessage: "Ուղարկել հաղորդագրություն",
     name: "Անուն",
     namePlaceholder: "Ձեր անունը",

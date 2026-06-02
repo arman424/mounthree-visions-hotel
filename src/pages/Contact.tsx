@@ -13,12 +13,6 @@ const Contact = () => {
       <section className="hotel-section">
         <div className="max-w-3xl mx-auto">
           <div className="space-y-10">
-            <div className="space-y-4 text-center">
-              <p className="hotel-subheading">{t.contactPage.reachUs}</p>
-              <h2 className="hotel-heading text-foreground">{t.contactPage.weWouldLove}</h2>
-              <div className="gold-divider" />
-            </div>
-
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 border border-primary/30 flex items-center justify-center shrink-0">

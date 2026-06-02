@@ -31,7 +31,7 @@ const Dining = () => {
             <p className="hotel-body">{t.diningPage.restaurantText1}</p>
             <p className="hotel-body">{t.diningPage.restaurantText2}</p>
           </div>
-          <img src="/images/dining1.jpg" alt="Fine dining" className="w-full aspect-[4/5] object-cover" loading="lazy" />
+          <img src="/images/dining1.webp" alt="Fine dining" className="w-full aspect-[4/5] object-cover" loading="lazy" />
         </div>
       </section>
 

@@ -3,7 +3,7 @@ import { Translations } from "./types";
 export const en: Translations = {
   nav: {
     home: "Home",
-    rooms: "Rooms & Suites",
+    rooms: "Rooms",
     facilities: "Facilities",
     dining: "Dining",
     contact: "Contact",
@@ -42,7 +42,7 @@ export const en: Translations = {
   },
   roomsPreview: {
     label: "Accommodations",
-    title: "Rooms & Suites",
+    title: "Rooms",
     viewAll: "View All Rooms",
     seeMore: "See More",
     guests: "Guests",
@@ -61,8 +61,8 @@ export const en: Translations = {
     bookYourStay: "Book Your Stay",
   },
   roomsPage: {
-    subtitle: "Accommodations",
-    title: "Rooms & Suites",
+    subtitle: "",
+    title: "Rooms",
     intro: "Mounthree offers a diverse range of accommodations to suit every guest's preference and ensure a luxurious and comfortable stay. Each room features breathtaking views of the canyon, forest, or our beautifully landscaped yard.",
     guests: "Guests",
     bathroom: "Bathroom",
@@ -108,7 +108,7 @@ export const en: Translations = {
   },
   facilitiesPage: {
     subtitle: "What We Offer",
-    title: "Facilities",
+    title: "Services",
     roomServiceLabel: "Room Service",
     roomServiceTitle: "Room Service",
     roomServiceText: "Enjoy the comfort of in-room dining with our 24-hour room service. Choose from a curated menu of dishes and beverages delivered directly to your room.",

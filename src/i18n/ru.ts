@@ -42,7 +42,7 @@ export const ru: Translations = {
   },
   roomsPreview: {
     label: "Размещение",
-    title: "Номера и Люксы",
+    title: "Номера",
     viewAll: "Все номера",
     seeMore: "Смотреть ещё",
     guests: "Гостей",
@@ -61,8 +61,8 @@ export const ru: Translations = {
     bookYourStay: "Забронировать",
   },
   roomsPage: {
-    subtitle: "Размещение",
-    title: "Номера и Люксы",
+    subtitle: "",
+    title: "Номера",
     intro: "Mounthree предлагает разнообразные варианты размещения для любых предпочтений гостей, обеспечивая роскошное и комфортное пребывание. Из каждого номера открывается захватывающий вид на каньон, лес или наш ухоженный двор.",
     guests: "Гостей",
     bathroom: "Ванная",
@@ -108,7 +108,7 @@ export const ru: Translations = {
   },
   facilitiesPage: {
     subtitle: "Наши предложения",
-    title: "Удобства",
+    title: "Услуги",
     roomServiceLabel: "Обслуживание номеров",
     roomServiceTitle: "Обслуживание номеров",
     roomServiceText: "Наслаждайтесь комфортом в номере с нашим круглосуточным обслуживанием. Выбирайте из специального меню блюд и напитков с доставкой прямо в номер.",
@@ -156,7 +156,7 @@ export const ru: Translations = {
     rooftopText: "На шестом этаже наш Rooftop Bar предоставляет непревзойдённый гастрономический опыт. Наслаждайтесь изысканными блюдами и авторскими коктейлями с захватывающими видами.",
     hoursLabel: "Часы работы",
     hoursTitle: "Забронировать столик",
-    hoursText: "Понедельник — Воскресенье · 16:00 — 23:00",
+    hoursText: "Понедельник — Воскресенье · 12:00 — 23:00",
     callUs: "Позвонить",
     emailUs: "Написать",
     menuItems: {
@@ -181,7 +181,7 @@ export const ru: Translations = {
     phone: "Телефон",
     email: "Эл. почта",
     restaurantHours: "Часы работы ресторана",
-    restaurantHoursValue: "Понедельник — Воскресенье · 16:00 — 23:00",
+    restaurantHoursValue: "Понедельник — Воскресенье · 12:00 — 23:00",
     sendMessage: "Написать сообщение",
     name: "Имя",
     namePlaceholder: "Ваше имя",
