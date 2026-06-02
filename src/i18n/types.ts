@@ -39,6 +39,8 @@ export interface Translations {
     barDesc: string;
     parking: string;
     parkingDesc: string;
+    gaming: string;
+    gamingDesc: string;
   };
   roomsPreview: {
     label: string;
