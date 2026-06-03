@@ -23,7 +23,7 @@ const Dining = () => {
 
       {/* Intro */}
       <section className="hotel-section">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 gap-8 md:gap-20 items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div className="space-y-6 min-w-0">
             <p className="hotel-subheading">{t.diningPage.restaurantLabel}</p>
             <h2 className="hotel-heading text-foreground break-words">{t.diningPage.restaurantTitle}</h2>
@@ -31,7 +31,7 @@ const Dining = () => {
             <p className="hotel-body">{t.diningPage.restaurantText1}</p>
             <p className="hotel-body">{t.diningPage.restaurantText2}</p>
           </div>
-          <img src="/images/dining1.webp" alt="Fine dining" className="w-full aspect-[4/5] object-cover" loading="lazy" />
+          <img src="/images/dining1.webp" alt="Fine dining" className="w-full aspect-[4/3] object-cover" loading="lazy" />
         </div>
       </section>
 
