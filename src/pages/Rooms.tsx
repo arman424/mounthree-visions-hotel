@@ -80,7 +80,7 @@ const roomsData = [
   {
     nameKey: "presidential" as const,
     images: ["images/presidental.jpeg", "images/presidental2.jpeg", "images/presidental3.jpeg", "images/presidental4.jpeg", "images/presidental5.jpeg", "images/presidental6.jpeg"],
-    guests: 4, bathrooms: 2, area: "120 m²", qty: 1, price: "390,000֏",
+    guests: 2, bathrooms: 2, area: "120 m²", qty: 1, price: "390,000֏",
     featureKeys: ["superKingBed", "showerTubView", "elegantFurnitureSofa", "sharingBalconies", "terraceViews"] as const,
   },
   {

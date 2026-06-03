@@ -206,7 +206,7 @@ export const ru: Translations = {
     contact: "Контакты",
     hours: "Часы работы",
     checkin: "Регистрация: 24/7",
-    restaurantHours: "Ресторан: Пн–Вс, 16:00 – 23:00",
+    restaurantHours: "Ресторан: Пн–Вс, 12:00 – 23:00",
     bookNow: "Бронировать",
     rights: "Отель Mounthree. Все права защищены.",
   },
