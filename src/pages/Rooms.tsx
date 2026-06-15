@@ -13,7 +13,7 @@ import {
 const roomsData = [
     {
         nameKey: "standardMountain" as const,
-        images: ["images/room2.jpg"],
+        images: ["images/room2.jpg", "images/mountain1.jpeg", "images/mountain2.jpeg", "images/mountain3.jpeg", "images/mountain4.jpeg"],
         guests: 2, bathrooms: 1, area: "26-31 m²", qty: 15, price: "69,000֏",
         featureKeys: ["kingBed", "showerBathroom", "modernAmenities", "balconyViews"] as const,
     },
@@ -49,7 +49,7 @@ const roomsData = [
     },
     {
         nameKey: "deluxeCourtyard" as const,
-        images: ["images/delux-countryard1.jpeg", "images/delux-countryard2.jpeg", "images/delux-countryard3.jpeg", "images/delux-countryard4.jpeg", "images/delux-countryard5.jpeg", "images/delux-countryard6.jpeg", "images/delux-countryard7.jpeg", "images/delux-countryard8.jpeg", "images/delux-countryard9.jpeg", "images/delux-countryard10.jpeg"],
+        images: ["images/delux-countryard1.jpeg", "images/delux-countryard2.jpeg", "images/delux-countryard4.jpeg", "images/delux-countryard5.jpeg", "images/delux-countryard6.jpeg", "images/delux-countryard7.jpeg", "images/delux-countryard8.jpeg", "images/delux-countryard9.jpeg", "images/delux-countryard10.jpeg"],
         guests: 2, bathrooms: 1, area: "36 m²", qty: 2, price: "83,000֏",
         featureKeys: ["kingBedComfort", "showerBathroom", "spaciousElegant", "courtyardBalcony"] as const,
     },
