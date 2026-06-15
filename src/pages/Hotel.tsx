@@ -67,7 +67,7 @@ const Hotel = () => {
           </div>
           <Carousel className="w-full group" opts={{ loop: true }}>
             <CarouselContent>
-              {["images/gym1.jpeg", "images/gym2.jpeg", "images/gym3.jpeg", "images/gym4.jpeg", "images/gym5.jpeg", "images/gym6.jpeg", "images/gym7.jpeg"].map((img, i) => (
+              {["images/gym1.jpeg", "images/gym2.jpeg", "images/gym3.jpeg", "images/gym4.jpeg", "images/gym5.jpeg", "images/gym6.jpeg", "images/gym7.jpeg", "images/gym8.jpeg", "images/gym9.jpeg", "images/gym10.jpeg"].map((img, i) => (
                 <CarouselItem key={i}>
                   <img src={img} alt={`Gym & Game Zone ${i + 1}`} className="w-full aspect-[4/3] object-cover" loading="lazy" />
                 </CarouselItem>
@@ -84,7 +84,7 @@ const Hotel = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <Carousel className="w-full group" opts={{ loop: true }}>
             <CarouselContent>
-              {["images/playroom1.jpeg", "images/playroom2.jpeg", "images/playroom3.jpeg", "images/playroom4.jpeg"].map((img, i) => (
+              {["images/playroom1.jpeg", "images/playroom2.jpeg", "images/playroom3.jpeg", "images/playroom4.jpeg", "images/playroom5.jpeg", "images/playroom6.jpeg", "images/playroom7.jpeg", "images/playroom8.jpeg", "images/playroom9.jpeg"].map((img, i) => (
                 <CarouselItem key={i}>
                   <img src={img} alt={`Play Room ${i + 1}`} className="w-full aspect-[4/3] object-cover" loading="lazy" />
                 </CarouselItem>
