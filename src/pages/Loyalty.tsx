@@ -45,7 +45,7 @@ const Loyalty = () => {
                   {card.description}
                 </p>
                 <Link
-                  to="/contact"
+                  to="/loyalty/join"
                   className="inline-block self-center mt-6 text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
                 >
                   {t.loyaltyPage.joinNow}

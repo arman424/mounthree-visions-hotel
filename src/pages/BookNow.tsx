@@ -1,13 +1,13 @@
 import Layout from "@/components/Layout";
 import { useI18n } from "@/i18n/context";
 import { useEffect } from "react";
-import { runBookingEngine } from "@/lib/bookingEngine";
+import { getBookingEngineLang, runBookingEngine } from "@/lib/bookingEngine";
 
 const BookNow = () => {
   const { t, lang } = useI18n();
 
   useEffect(() => {
-    const bookingLang = lang === "am" ? "hy" : lang;
+    const bookingLang = getBookingEngineLang(lang);
 
     runBookingEngine([
       ["setContext", "BE-INT-mounthree-com_2024-12-27", bookingLang],

@@ -1,5 +1,10 @@
 type BookingCommand = [string, ...unknown[]];
 
+export const getBookingEngineLang = (lang: string) => {
+  if (lang === "am") return "hy";
+  return lang;
+};
+
 /**
  * Queues Booking Engine commands and ensures the provider loader is present.
  * Safe to call on route mounts in an SPA.

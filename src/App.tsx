@@ -13,6 +13,7 @@ import Dining from "./pages/Dining";
 import Contact from "./pages/Contact";
 import BookNow from "./pages/BookNow";
 import Loyalty from "./pages/Loyalty";
+import LoyaltyJoin from "./pages/LoyaltyJoin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/dining" element={<Dining />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/loyalty" element={<Loyalty />} />
+            <Route path="/loyalty/join" element={<LoyaltyJoin />} />
             <Route path="/book" element={<BookNow />} />
             <Route path="/en/booking" element={<BookNow />} />
             <Route path="*" element={<NotFound />} />
