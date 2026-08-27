@@ -28,6 +28,7 @@ const Header = () => {
     { label: t.nav.rooms, path: "/rooms" },
     { label: t.nav.facilities, path: "/hotel" },
     { label: t.nav.dining, path: "/dining" },
+    { label: t.nav.loyalty, path: "/loyalty" },
     { label: t.nav.contact, path: "/contact" },
   ];
 
