@@ -201,6 +201,16 @@ export interface Translations {
     needAssistance: string;
     orEmail: string;
   };
+  loyaltyPage: {
+    subtitle: string;
+    title: string;
+    intro: string;
+    joinNow: string;
+    cards: {
+      title: string;
+      description: string;
+    }[];
+  };
   footer: {
     brandText: string;
     quickLinks: string;
