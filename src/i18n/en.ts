@@ -6,6 +6,7 @@ export const en: Translations = {
     rooms: "Rooms",
     facilities: "Facilities",
     dining: "Dining",
+    loyalty: "Loyalty Program",
     contact: "Contact",
     bookNow: "Book Now",
   },
@@ -218,5 +219,29 @@ export const en: Translations = {
     location: "📍 Rooftop Terrace",
     limited: "👥 Limited to 40 guests",
     reserve: "Reserve Your Spot",
+  },
+  loyaltyPage: {
+    subtitle: "Rewards",
+    title: "Loyalty Program",
+    intro: "Join the Mounthree loyalty program and unlock exclusive discounts on every stay. The more you visit, the more you save.",
+    joinNow: "Join Now",
+    cards: [
+      {
+        title: "Base Level",
+        description: "Enjoy 5% off on every stay right after registration. Start saving from day one!",
+      },
+      {
+        title: "Silver Level",
+        description: "Unlock 7% discount after completing 10 nights. More stays, more rewards.",
+      },
+      {
+        title: "Gold Level",
+        description: "Reach 20 nights and enjoy a 10% discount on all bookings. Premium perks for our loyal guests.",
+      },
+      {
+        title: "Platinum Level",
+        description: "Stay for 30 nights and unlock our highest discount — 15% off all future bookings.",
+      },
+    ],
   },
 };
