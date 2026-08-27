@@ -12,59 +12,57 @@ const Contact = () => {
 
       <section className="hotel-section">
         <div className="max-w-4xl mx-auto">
-          <div className="space-y-10">
-            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-8">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 border border-primary/30 flex items-center justify-center shrink-0">
-                  <MapPin size={18} className="text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-serif text-lg text-foreground">{t.contactPage.address}</h4>
-                  <p className="text-sm text-muted-foreground mt-1">{t.contactPage.addressValue}</p>
-                </div>
+          <div className="grid sm:grid-cols-2 gap-x-8 gap-y-8">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 border border-primary/30 flex items-center justify-center shrink-0">
+                <MapPin size={18} className="text-primary" />
               </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 border border-primary/30 flex items-center justify-center shrink-0">
-                  <Phone size={18} className="text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-serif text-lg text-foreground">{t.contactPage.phone}</h4>
-                  <a href="tel:+37460449444" className="text-sm text-muted-foreground hover:text-primary transition-colors block mt-1">+374 60 449 444</a>
-                  <a href="tel:+37444444090" className="text-sm text-muted-foreground hover:text-primary transition-colors block">+374 44 444 090</a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 border border-primary/30 flex items-center justify-center shrink-0">
-                  <Mail size={18} className="text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-serif text-lg text-foreground">{t.contactPage.email}</h4>
-                  <a href="mailto:info@mounthree.com" className="text-sm text-muted-foreground hover:text-primary transition-colors block mt-1">info@mounthree.com</a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 border border-primary/30 flex items-center justify-center shrink-0">
-                  <Clock size={18} className="text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-serif text-lg text-foreground">{t.contactPage.restaurantHours}</h4>
-                  <p className="text-sm text-muted-foreground mt-1">{t.contactPage.restaurantHoursValue}</p>
-                </div>
+              <div>
+                <h4 className="font-serif text-lg text-foreground">{t.contactPage.address}</h4>
+                <p className="text-sm text-muted-foreground mt-1">{t.contactPage.addressValue}</p>
               </div>
             </div>
 
-            <div className="flex gap-4 pt-4 justify-center">
-              <a href="https://www.facebook.com/346457221890276" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-primary/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors">
-                <Facebook size={18} />
-              </a>
-              <a href="https://www.instagram.com/mounthree.mp/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-primary/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors">
-                <Instagram size={18} />
-              </a>
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 border border-primary/30 flex items-center justify-center shrink-0">
+                <Phone size={18} className="text-primary" />
+              </div>
+              <div>
+                <h4 className="font-serif text-lg text-foreground">{t.contactPage.phone}</h4>
+                <a href="tel:+37460449444" className="text-sm text-muted-foreground hover:text-primary transition-colors block mt-1">+374 60 449 444</a>
+                <a href="tel:+37444444090" className="text-sm text-muted-foreground hover:text-primary transition-colors block">+374 44 444 090</a>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 border border-primary/30 flex items-center justify-center shrink-0">
+                <Mail size={18} className="text-primary" />
+              </div>
+              <div>
+                <h4 className="font-serif text-lg text-foreground">{t.contactPage.email}</h4>
+                <a href="mailto:info@mounthree.com" className="text-sm text-muted-foreground hover:text-primary transition-colors block mt-1">info@mounthree.com</a>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 border border-primary/30 flex items-center justify-center shrink-0">
+                <Clock size={18} className="text-primary" />
+              </div>
+              <div>
+                <h4 className="font-serif text-lg text-foreground">{t.contactPage.restaurantHours}</h4>
+                <p className="text-sm text-muted-foreground mt-1">{t.contactPage.restaurantHoursValue}</p>
+              </div>
             </div>
           </div>
+        </div>
+
+        <div className="flex justify-center gap-4 pt-12 mt-12 border-t border-border/50">
+          <a href="https://www.facebook.com/346457221890276" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-primary/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors">
+            <Facebook size={18} />
+          </a>
+          <a href="https://www.instagram.com/mounthree.mp/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-primary/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors">
+            <Instagram size={18} />
+          </a>
         </div>
       </section>
 
