@@ -6,6 +6,7 @@ export interface Translations {
     rooms: string;
     facilities: string;
     dining: string;
+    loyalty: string;
     contact: string;
     bookNow: string;
   };
