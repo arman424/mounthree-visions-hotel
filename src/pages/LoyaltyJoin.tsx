@@ -33,8 +33,7 @@ const LoyaltyJoin = () => {
         <section className="hotel-section">
           <div className="max-w-5xl mx-auto space-y-8">
             <div className="text-center space-y-4">
-              <p className="hotel-subheading">{t.loyaltyPage.subtitle}</p>
-              <h1 className="hotel-heading text-foreground">{t.loyaltyPage.joinNow}</h1>
+              <h1 className="hotel-heading text-foreground">{t.nav.myAccount}</h1>
               <div className="gold-divider" />
             </div>
 

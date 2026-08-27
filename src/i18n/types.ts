@@ -9,6 +9,7 @@ export interface Translations {
     loyalty: string;
     contact: string;
     bookNow: string;
+    myAccount: string;
   };
   hero: {
     welcomeTo: string;

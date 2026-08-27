@@ -77,6 +77,10 @@ const Header = () => {
             </DropdownMenuContent>
           </DropdownMenu>
 
+          <Link to="/guest-account" className="be-guest-account-btn pr-1 xl:pr-2">
+            <span className="be-guest-text">{t.nav.myAccount}</span>
+          </Link>
+
           <Link
             to="/en/booking"
             className="text-[11px] xl:text-xs uppercase tracking-[0.15em] xl:tracking-[0.2em] font-semibold whitespace-nowrap px-4 xl:px-6 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
@@ -134,6 +138,14 @@ const Header = () => {
               className="text-sm uppercase tracking-[0.15em] font-semibold px-6 py-3 border border-primary text-primary text-center mt-2"
             >
               {t.nav.bookNow}
+            </Link>
+
+            <Link
+              to="/guest-account"
+              onClick={() => setIsOpen(false)}
+              className="be-guest-account-btn max-w-full"
+            >
+              <span className="be-guest-text">{t.nav.myAccount}</span>
             </Link>
           </nav>
         </div>

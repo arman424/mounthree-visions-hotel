@@ -9,6 +9,7 @@ export const en: Translations = {
     loyalty: "Loyalty Program",
     contact: "Contact",
     bookNow: "Book Now",
+    myAccount: "My account",
   },
   hero: {
     welcomeTo: "Welcome to",

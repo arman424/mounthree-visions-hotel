@@ -9,6 +9,7 @@ export const am: Translations = {
     loyalty: "Հավատարմության ծրագիր",
     contact: "Կապ",
     bookNow: "Ամրագրել",
+    myAccount: "Իմ հաշիվը",
   },
   hero: {
     welcomeTo: "Բարի գալուստ",

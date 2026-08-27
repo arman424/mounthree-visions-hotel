@@ -9,6 +9,7 @@ export const ru: Translations = {
     loyalty: "Программа лояльности",
     contact: "Контакты",
     bookNow: "Бронировать",
+    myAccount: "Мой аккаунт",
   },
   hero: {
     welcomeTo: "Добро пожаловать в",
